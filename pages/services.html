@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="taller">
+    <meta name="author" content="Cesar">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/favicon.png">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!--  Icons  -->
+    <script src="https://kit.fontawesome.com/12f69a35de.js" crossorigin="anonymous"></script>
+    <!--- Title -->
+    <title>OJO CLINICO BIKE</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <label class="logo" for="">OJO CLINICO BIKE</label>
+            <ul class="menu__items">
+                <li><a href="../index.html">Home</a></li>
+                <li class="action">Menu
+                    <ul>
+                        <li><a href="./services.html">Services</a></li>
+                        <li class="action">Nosotros
+                            <ul>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="./location.html">Location</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="btn__menu">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </nav>
+    </header>
+    <section class="services">
+        <h1>Servicios</h1>
+        <!-- Tabla -->
+        <div class="table">
+            <table>
+                <!-- Me falta centrado en los campos de la Tabla -->
+                <caption>Tabla de precios por Services</caption>
+                <thead>
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Incluye</th>
+                        <th>Precio</th>
+                        <th>Moneda</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Service básico</td>
+                        <td>
+                            Lavado completo.
+                            Limpieza de transmisión.
+                            Ajuste y puesta a punto de cambios.
+                            Control y revisión de frenos.
+                        </td>
+                        <td class="precio">$2000</td>
+                        <td>Pesos</td>
+                    </tr>
+                    <tr>
+                        <td>Service Pro</td>
+                        <td> Lavado completo.
+                            Limpieza de transmisión.
+                            Desarme completo.
+                            Revisión de todos los componentes.
+                            Limpieza y engrase de todas las partes móviles.
+                            Ajuste y puesta a punto de cambios.
+                            Control y revisión de frenos. </td>
+                        <td class="precio">$3000</td>
+                        <td>Pesos</td>
+                    </tr>
+                    <tr>
+                        <td>Service Enterprise</td>
+                        <td>Lavado completo.
+                            Limpieza de transmisión.
+                            Desarme completo.
+                            Revisión de todos los componentes.
+                            Limpieza y engrase de todas las partes móviles.
+                            Ajuste y puesta a punto de cambios.
+                            Control y revisión de frenos.
+                            Purgado de frenos.
+                            Centrado de ruedas. </td>
+                        <td class="precio">$5000</td>
+                        <td>Pesos</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Incluye</th>
+                        <th>Precio</th>
+                        <th>Moneda</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="form">
+            <form class="form__body" action="../index.html" method="post">
+                <fieldset>
+                    <!-- Se me complicó el diseño del fielset -->
+                    <legend>
+                        <h2>Solicitud de servicio</h2>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                        <select name="service__option" id="service__option" aria-placeholder="Servicio" required>
+                            <option value="basic">Service básico</option>
+                            <option value="pro">Service Pro</option>
+                            <option value="entreprise">Service Enterprise</option>
+                        </select>
+                        <textarea id="txt" form="contacto" name="textarea" rows="5" cols="30"
+                            placeholder="Mensaje"></textarea>
+                        <input id="send" type="submit" value="Enviar">
+                        <div class="consent">
+                            <p class="consent">
+                                <input type="checkbox" name="consent" id="consent" required>
+                                <label for="consent">Acepto los términos y condiciones</label>
+                            </p>
+                        </div>
+                    </legend>
+                </fieldset>
+            </form>
+        </div>
+
+    </section>
+    <section class="build">
+        <div class="ifrem">
+            <h4>También hacemos servicio de armado a pedido.</h4>
+            <iframe src="https://www.youtube.com/embed/7R2y_ESKy88" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+</body>
+
+<footer>
+    <hr>
+    <div>
+        <div class="footer__info">
+            <div class="footer__item">
+                <h3>OJO CLINICO BIKE</h3>
+                <p>Ofrecemos soluciones ideales para resolver problemas simples o complejos que pueda presentar tu bici.
+                </p>
+            </div>
+            <div class="footer__item">
+                <a class="contact__footer" href="./contact.html">Contacto</a>
+                <p>Por cualquier duda o comentario que quieras dejarnos contactanos aquí.</p>
+
+                <mail><a href="mailto:ojo.clinico.bike@gmail.com">info@ojoclinicobike.com.ar</a></mail>
+            </div>
+            <div class="footer__item">
+                <h3>Redes sociales</h3>
+                <div class="redes">
+                    <a href="https://www.facebook.com/OjoClinicoBike/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ojo_clinico_bike/" target="_blank"><i
+                            class="fa-brands fa-instagram-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>Todos los derechos reservados &copy; 2021 - Developed by César L. Medina</p>
+        </div>
+    </div>
+</footer>
+
+</html>
