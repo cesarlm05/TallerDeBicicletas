@@ -28,7 +28,7 @@ body {
   background-color: #333;
 }
 
-/* Grid */
+/* Grid para Index */
 
 .container__index {
   height: 100vh;
@@ -170,7 +170,7 @@ body {
     top: 60px;
   }
   
-  /**************/
+  /* ************ */
 
 .area__intro {
   grid-area: area__intro;
@@ -219,7 +219,7 @@ body {
     padding: 10px;
   }
 
-  /**************/
+  /* ************ */
 
 .area__cards {
   grid-area: area__cards;
@@ -301,7 +301,7 @@ body {
     text-align: center;
   }
 
-    /**************/
+    /* ************ */
 /* About */
 .about {
     display: flex;
@@ -628,9 +628,14 @@ footer {
     height: 10px;
   }
   
+  /* ********** */
+
   /* Responsive */
   
   @media screen and (max-width: 768px) {
+    body {
+      font-size: 8px;
+    }
     .logo {
       font-size: 10px;
       padding: 0 25px;
@@ -643,6 +648,9 @@ footer {
     }
   }
   @media screen and (max-width: 640px) {
+    body {
+      font-size: 8px;
+    }
     .menu {
       height: 50px;
     }
@@ -683,6 +691,9 @@ footer {
     }
   }
   @media screen and (max-width: 480px) and (orientation: landscape) {
+    body {
+      font-size: 8px;
+    }
     .menu__items li a {
       margin: 5px;
       font-size: 10px;
