@@ -211,6 +211,10 @@ body {
   transform: translateX(0);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  margin-top: 10px;
+}
+.btn__menu:hover {
+  transform: scale(1.5);
 }
 ul.show {
   transform: translateX(0);
@@ -683,7 +687,6 @@ form fieldset {
 /* Footer */
 footer {
   display: block;
-  margin-left: auto;
   margin-top: 30px;
   text-align: center;
   background-color: rgb(194, 0, 0);
@@ -768,10 +771,10 @@ footer a:hover {
     width: 7px;
     height: 7px;
   }
-  .location h1{
+  .location h1 {
     font-size: 25px;
   }
-  .location h4{
+  .location h4 {
     font-size: 16px;
   }
   .services h1 {
@@ -783,7 +786,7 @@ footer a:hover {
   .precio {
     font-size: 18px;
   }
-  .build h4{
+  .build h4 {
     font-size: 20px;
   }
 }
@@ -815,6 +818,8 @@ footer a:hover {
     font-size: 10px;
     margin: 30 0 0 0 !important;
     line-height: 30px;
+    text-align: justify;
+    font: caption;
   }
   .menu__items li:hover {
     background: none;
@@ -862,10 +867,10 @@ footer a:hover {
     width: 5px;
     height: 5px;
   }
-  .location h1{
+  .location h1 {
     font-size: 20px;
   }
-  .location h4{
+  .location h4 {
     font-size: 12px;
   }
   .services h1 {
@@ -877,7 +882,7 @@ footer a:hover {
   .precio {
     font-size: 16px;
   }
-  .build h4{
+  .build h4 {
     font-size: 16px;
   }
 }
