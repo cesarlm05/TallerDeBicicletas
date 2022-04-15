@@ -807,8 +807,9 @@ footer a:hover {
   .menu__items {
     position: fixed;
     width: 100vw;
-    height: calc(100% - 50px);
-    background: #414141;
+    *height: calc(100% - 50px);
+    *background: #414141;
+    background: rgb(158, 2, 2);
     top: -100vh;
     text-align: center;
     transition: top 0.3s ease-in-out;
