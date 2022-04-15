@@ -194,8 +194,10 @@ body {
   .intro h1 {
     font-size: 50px;
     font-weight: bold;
+    text-align: center;
   }
   .intro p {
+    text-align: center;
     font-size: 20px;
     font-weight: bold;
     padding: 25px;
@@ -633,8 +635,11 @@ footer {
   /* Responsive */
   
   @media screen and (max-width: 768px) {
-    body {
-      font-size: 8px;
+    .inner__title {
+      font-size: 14px;
+    }
+    .inner__subtitle{
+      font-size: 12px;
     }
     .logo {
       font-size: 10px;
@@ -648,8 +653,11 @@ footer {
     }
   }
   @media screen and (max-width: 640px) {
-    body {
-      font-size: 8px;
+    .inner__title {
+      font-size: 13px;
+    }
+    .inner__subtitle{
+      font-size: 11px;
     }
     .menu {
       height: 50px;
@@ -691,7 +699,7 @@ footer {
     }
   }
   @media screen and (max-width: 480px) and (orientation: landscape) {
-    body {
+    .card {
       font-size: 8px;
     }
     .menu__items li a {
