@@ -73,7 +73,7 @@ body {
     "area__footer";
 }
 
-/* Grid para Location */
+/* Grid para Service */
 
 .container__service {
   height: 100vh;
@@ -571,6 +571,7 @@ form fieldset {
 
 /* ************ */
 
+/* Area location */
 .area__location {
   grid-area: area__location;
 }
@@ -678,7 +679,7 @@ form fieldset {
   padding: 10px;
   margin-top: 20px;
 }
-
+/* ************** */
 /* Footer */
 
 .area__footer {
@@ -807,7 +808,7 @@ footer a:hover {
   .menu__items {
     position: fixed;
     width: 100vw;
-    *height: calc(100% - 50px);
+    *height: calc(100% - 50px);/*Se rompe con la grilla */
     *background: #414141;
     background: rgb(158, 2, 2);
     top: -100vh;
