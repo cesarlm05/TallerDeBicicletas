@@ -39,6 +39,14 @@ body {
   "area__cards"
   "area__footer";
 }
+.container__about {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+  "area__encabezado"
+  "area__about"
+  "area__footer";
+}
 
 .area__encabezado {
   grid-area: area__encabezado;
@@ -304,7 +312,14 @@ body {
   }
 
     /* ************ */
+
+/* Aera About*/
+.area__about {
+  grid-area: area__about;
+}
+
 /* About */
+
 .about {
     display: flex;
     flex-direction: column;
@@ -321,7 +336,7 @@ body {
   }
   .about h1 {
     display: flex;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     color: #fff;
     background-color: #00000081;
@@ -651,6 +666,15 @@ footer {
     .menu__items li a {
       font-size: 10px;
     }
+    .about h1{
+      font-size: 30px;
+    }
+    .about h3{
+      font-size: 20px;
+    }
+    .about p{
+      font-size: 14px;
+    }
   }
   @media screen and (max-width: 640px) {
     .inner__title {
@@ -696,6 +720,15 @@ footer {
     .logo {
       font-size: 25px;
       padding: 30px;
+    }
+    .about h1{
+      font-size: 25px;
+    }
+    .about h3{
+      font-size: 18px;
+    }
+    .about p{
+      font-size: 12px;
     }
   }
   @media screen and (max-width: 480px) and (orientation: landscape) {
