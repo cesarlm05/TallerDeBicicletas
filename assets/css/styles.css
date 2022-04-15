@@ -73,6 +73,18 @@ body {
     "area__footer";
 }
 
+/* Grid para Location */
+
+.container__service {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "area__encabezado"
+    "area__services"
+    "area__build"
+    "area__footer";
+}
+
 /* *************** */
 
 .area__encabezado {
@@ -390,6 +402,10 @@ ul.show {
 
 /* ************ */
 
+.area__services {
+  grid-area: area__services;
+}
+
 /* Services */
 /* Tabla */
 .services {
@@ -404,6 +420,7 @@ ul.show {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
+  text-align: center;
 }
 .services h1 {
   font-size: 50px;
@@ -457,6 +474,12 @@ tbody td {
 tfoot th {
   text-align: center;
 }
+
+/* Area Bulid */
+.area__build {
+  grid-area: area__build;
+}
+
 /* Build*/
 .build {
   display: flex;
@@ -751,6 +774,18 @@ footer a:hover {
   .location h4{
     font-size: 16px;
   }
+  .services h1 {
+    font-size: 40px;
+  }
+  th {
+    font-size: 12px;
+  }
+  .precio {
+    font-size: 18px;
+  }
+  .build h4{
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 640px) {
   .inner__title {
@@ -832,6 +867,18 @@ footer a:hover {
   }
   .location h4{
     font-size: 12px;
+  }
+  .services h1 {
+    font-size: 30px;
+  }
+  th {
+    font-size: 10px;
+  }
+  .precio {
+    font-size: 16px;
+  }
+  .build h4{
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) and (orientation: landscape) {
