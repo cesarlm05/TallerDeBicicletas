@@ -39,12 +39,26 @@ body {
   "area__cards"
   "area__footer";
 }
+
+/* Grid para About */
+
 .container__about {
   height: 100vh;
   display: grid;
   grid-template-areas:
   "area__encabezado"
   "area__about"
+  "area__footer";
+}
+
+/* Grid para Contact */
+
+.container__contact {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+  "area__encabezado"
+  "area__contact"
   "area__footer";
 }
 
@@ -559,13 +573,20 @@ body {
     margin: 25px;
     padding: 10px;
   }
+
+  /* **************** */
   
+  /* Area Contacto*/
+  .area__contact__section{
+    grid-area: area__contact;
+  }
+
   /* Contacto */
-  .contact__section {
+  .area__contact__section {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    margin-bottom: 15px;
     background: linear-gradient(to right, #00000099 100%, #00000099 100%),
       url("/assets/img/valvulas.png");
     background-size: cover;
@@ -574,11 +595,15 @@ body {
     background-attachment: fixed;
     color: #fff;
   }
+  .form__body{
+    margin: 35px;
+  }
   .contact__intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   .contact__intro h1 {
     font-size: 40px;
@@ -613,10 +638,11 @@ body {
 footer {
     display: block;
     margin-left: auto;
+    margin-top: 30px;
     text-align: center;
     background-color: rgb(194, 0, 0);
     color: #fff;
-    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.8);
   }
   .footer__info {
     display: flex;
@@ -675,6 +701,27 @@ footer {
     .about p{
       font-size: 14px;
     }
+    .contact__intro h1{
+      font-size: 30px;
+    }
+    .contact__intro p{
+      font-size: 14px;
+    }
+    .contact__intro a{
+      font-size: 14px;
+    }
+    .form__body {
+      width: 380px;
+      height: 580px;
+    }
+    #send {
+      font-size: 16px;
+    }
+    #consent {
+      font-size: 16px;
+      width: 7px;
+      height: 7px;
+    }
   }
   @media screen and (max-width: 640px) {
     .inner__title {
@@ -729,6 +776,27 @@ footer {
     }
     .about p{
       font-size: 12px;
+    }
+    .contact__intro h1{
+      font-size: 25px;
+    }
+    .contact__intro p{
+      font-size: 12px;
+    }
+    .contact__intro a{
+      font-size: 12px;
+    }
+    .form__body {
+      width: 360px;
+      height: 560px;
+    }
+    #send {
+      font-size: 12px;
+    }
+    #consent {
+      font-size: 12px;
+      width: 5px;
+      height: 5px;
     }
   }
   @media screen and (max-width: 480px) and (orientation: landscape) {
