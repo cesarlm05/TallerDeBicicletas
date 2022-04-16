@@ -101,7 +101,7 @@ body {
   margin-left: 15px;
 }
 .menu {
-  background-color: rgb(194, 0, 0);
+  background-color: #333;
   height: 75px;
   width: 100vw;
   display: flex;
@@ -149,15 +149,16 @@ body {
 }
 .menu li:hover {
   background: rgba(0, 0, 0, 0.3);
-  color: white;
+  color: rgb(161, 0, 0);
   cursor: pointer;
-  transition: all 300ms;
+  transition: all 333ms;
+  border-radius: 25px;
 }
 .menu ul li ul {
   *display: none;
   flex-direction: column;
   position: absolute;
-  background: rgb(158, 2, 2);
+  background-color: #333;
   margin-top: 15px;
   transform: rotateY(240deg) scale(0);
   transition: all 1s;
@@ -166,6 +167,7 @@ body {
 .menu ul li:hover > ul {
   transform: rotateY(0deg) scale(1);
   transition: all 1s;
+  border-radius: 25px;
 }
 .menu ul li ul:before {
   content: "";
@@ -187,7 +189,8 @@ body {
 .menu ul li ul li ul {
   right: -90px;
   top: 36px;
-  background: rgb(158, 2, 2);
+  background-color: #333;
+  border-radius: 25px;
 }
 .menu ul li ul li ul:before {
   position: absolute;
@@ -206,7 +209,7 @@ body {
   left: 0;
   margin-right: 15px;
   font-size: medium;
-  background: rgb(158, 2, 2);
+  background-color: #333;
   z-index: 9999;
   transform: translateX(0);
   transition: transform 0.3s ease-in-out;
@@ -258,7 +261,7 @@ ul.show {
   font-size: 25px;
   font-weight: bold;
   color: #fff;
-  background-color: rgb(194, 0, 0);
+  background-color: #333;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 25px;
@@ -383,7 +386,8 @@ ul.show {
   font-weight: bold;
   color: #fff;
   background-color: #00000081;
-  padding: 10px;
+  padding: 5px;
+  margin: 10px;
   border-radius: 25px;
 }
 .about h3 {
@@ -392,7 +396,7 @@ ul.show {
   font-weight: bold;
   color: #fff;
   background-color: #00000081;
-  padding: 10px;
+  padding: 5px;
   border-radius: 25px;
 }
 .about p {
@@ -440,7 +444,7 @@ ul.show {
   margin: 30px;
   padding: 20px;
   text-align: center;
-  border: #fff 3px solid;
+  border: rgb(136, 0, 0) 5px solid;
 }
 .precio {
   font-size: 20px;
@@ -450,6 +454,12 @@ ul.show {
   padding: 10px;
   border-radius: 25px;
   justify-content: center;
+}
+.table :hover {
+  color: rgb(194, 0, 0);
+  background-color: rgba(0, 0, 0, 0.514);
+  border-radius: 25px;
+  padding: 10px;
 }
 th,
 td {
@@ -522,17 +532,22 @@ tfoot th {
 form fieldset {
   border: 0;
 }
+legend h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  color: #fff;
+}
 .form__body {
   width: 400px;
   height: 620px;
-  margin-top: 15px;
-  margin-left: 6%;
+  margin: 15px;
   background-color: rgba(126, 126, 126, 0.6);
   border: 1px solid rgb(184, 0, 0);
   border-radius: 8px;
-  padding: 20px 9px 0px 9px;
+  padding: 15px;
   text-align: center;
-  float: left;
+  *float: left;
 }
 .form__body input {
   width: 70%;
@@ -549,11 +564,11 @@ form fieldset {
   margin-top: 5%;
   padding: 5%;
 }
-.form__body :hover {
+.form__body :hover legend {
   box-shadow: 0px 0px 25px rgb(59, 0, 0);
   transition: all 1s;
   border-radius: 15px;
-  background-color: rgba(255, 0, 0, 0.795);
+  background-color: rgba(255, 0, 0, 0.502);
 }
 #send {
   font-size: 20px;
@@ -563,8 +578,13 @@ form fieldset {
   flex-direction: row;
   align-items: center;
 }
+.consent input {
+  margin: 10px;
+}
+.consent label {
+  font-size: 12px;
+}
 #consent {
-  font-size: 20px;
   width: 10px;
   height: 10px;
 }
@@ -594,7 +614,7 @@ form fieldset {
 .location h1 {
   font-size: 30px;
   font-weight: bold;
-  padding: 10px;
+  margin: 15px;
   border-radius: 25px;
 }
 .location h4 {
@@ -604,24 +624,34 @@ form fieldset {
   border-radius: 25px;
 }
 .map {
-  width: 100vw;
-  height: 90vh;
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   border-radius: 25px;
-  padding: 20px;
+  padding: 15px;
+  margin: 25px;
   box-sizing: border-box;
   text-align: center;
+  border: 2px solid rgb(161, 0, 0);
 }
 .map iframe {
   width: 100%;
   height: 100%;
   border-radius: 25px;
 }
+.map :hover {
+  box-shadow: 0px 0px 25px rgb(110, 1, 1);
+  transition: all 1s;
+}
 .guia {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 25px;
+  margin: 15px;
   padding: 10px;
 }
 
@@ -672,12 +702,18 @@ form fieldset {
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  background-color: rgb(194, 0, 0);
+  background-color: #333;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 25px;
   padding: 10px;
   margin-top: 20px;
+}
+.contact__intro a:hover {
+  color: rgb(194, 0, 0);
+  background-color: rgba(0, 0, 0, 0.514);
+  border-radius: 25px;
+  padding: 10px;
 }
 /* ************** */
 /* Footer */
@@ -690,7 +726,7 @@ footer {
   display: block;
   margin-top: 30px;
   text-align: center;
-  background-color: rgb(194, 0, 0);
+  background-color: #333;
   color: #fff;
   box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.8);
 }
@@ -790,6 +826,9 @@ footer a:hover {
   .build h4 {
     font-size: 20px;
   }
+  legend h2 {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 640px) {
   .inner__title {
@@ -810,7 +849,7 @@ footer a:hover {
     width: 100vw;
     *height: calc(100% - 50px);/*Se rompe con la grilla */
     *background: #414141;
-    background: rgb(158, 2, 2);
+    background-color: #333;
     top: -100vh;
     text-align: center;
     transition: top 0.3s ease-in-out;
@@ -886,6 +925,12 @@ footer a:hover {
   }
   .build h4 {
     font-size: 16px;
+  }
+  legend h2 {
+    font-size: 14px;
+  }
+  .consent label {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 480px) and (orientation: landscape) {
