@@ -258,7 +258,6 @@ ul.show {
   margin: 15px;
 }
 .intro a {
-  *color: #000;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -274,7 +273,7 @@ ul.show {
 
 /* ************ */
 
-#btn--yp {
+.button-os {
   box-sizing: content-box;
   position: fixed;
   z-index: 9;
@@ -283,111 +282,98 @@ ul.show {
   border: solid 1em transparent;
   width: 4.625em;
   height: 3.25em;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2017/icon-yp.svg) 50%/cover content-box;
   font: 16px/1.25 trebuchet ms, sans-serif;
-  text-indent: 200vw;
+  *text-indent: 1vw;
   text-shadow: none;
   filter: grayscale(1) drop-shadow(0 0 1px #e8e0e0);
   transition: 0.5s;
   white-space: nowrap;
 }
-#btn--yp:before {
+.button-os:before {
   box-sizing: inherit;
   position: absolute;
   left: 0;
-  bottom: 100%;
-  margin: 1em -0.5em;
+  bottom: -90%;
+  margin: 1em -0.05em;
   padding: 0.5em;
   width: 100%;
   border-radius: 5px;
-  background: #e8e0e0;
+  background: #7e0000c0;
   color: #000;
   text-align: center;
   text-decoration: none;
   text-indent: 0vw;
   white-space: normal;
   animation: float 1s ease-in-out infinite alternate;
-  content: attr(data-txt);
+  content: '🛠️ OJO CLINICO BIKE 🛠️';
 }
-#btn--yp:hover, #btn--yp:focus {
+.button-os:hover, .button-os:focus {
   outline: none;
   filter: grayscale(0) drop-shadow(0 0 1px crimson);
 }
-
 @keyframes float {
   to {
     transform: translateY(0.75em);
   }
 }
-button span[aria-hidden=true]:after, button span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+
+
+.btn__animation {
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
-  --hue: 76;
-  --sat: 100%;
-  --lum: 32%;
-  display: block;
   border: none;
-  margin: 1em auto;
-  padding: 0;
-  position: relative;
-  width: 9em;
-  height: 3em;
-  background: none;
-  font: 5em/3.21em advent pro, sans-serif;
-  filter: contrast(0.5);
-  transition: 0.3s;
-  cursor: pointer;
-}
-button:focus, button:hover {
-  outline: none;
-  filter: none;
-}
-button:active {
-  transform: translateY(0.25rem);
-}
-button:active [aria-hidden=true] {
-  transform: translateY(var(--ty, 0.25rem));
-}
-button:active [aria-hidden=true]:nth-child(2) {
-  --ty: .75rem ;
-}
-button span[aria-hidden=true] {
-  filter: drop-shadow(0.125rem 0.1875rem hsl(var(--hue), calc(var(--sat) - 25%), 25%)) drop-shadow(-0.1875rem -0.125rem hsl(var(--hue), calc(var(--sat) - 41%), calc(var(--lum) + 31%))) drop-shadow(1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.75));
-}
-button span[aria-hidden=true]:after {
-  background: hsl(var(--hue), var(--sat), var(--lum));
-  clip-path: polygon(100% 0, 91% 91%, 13% 100%, 0 35%);
-  content: "";
-}
-button span[aria-hidden=true]:nth-child(2) {
-  --sat: 0%;
-  --lum: 83%;
-}
-button span[aria-hidden=true]:nth-child(2):after {
-  clip-path: polygon(3% 21%, 85% 25%, 75% 93%, 14% 87%);
-}
-button span:last-child {
-  background: radial-gradient(black, white 83%) 50% 0.125em/0.5em 50%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  filter: drop-shadow(2px 2px #313131);
-}
-button:nth-of-type(2) {
-  --hue: 187 ;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgb(137, 0, 0);
 }
 
-@media (max-width: 800px) {
-  html {
-    font-size: 2vw;
-  }
+button:hover {
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 8px #060606;
 }
+
+.button-os {
+  position: absolute;
+  width: 200px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #000000ce;
+  border: 2.5px solid #5e0000;
+  transition: background-color 2.2s;
+  transition-duration: 3s;
+  transition: 1.5s;
+}
+
+.button-os:hover {
+  position: absolute;
+  top: 30px;
+  background-color: rgb(137, 0, 0);
+}
+
+.button-os a {
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: 1.5s;
+}
+
+.button-os a:hover {
+  letter-spacing: 5px;
+}
+
+
 
 /* ************************ */
 
