@@ -258,6 +258,7 @@ ul.show {
   margin: 15px;
 }
 .intro a {
+  *color: #000;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -286,7 +287,7 @@ ul.show {
   font: 16px/1.25 trebuchet ms, sans-serif;
   text-indent: 200vw;
   text-shadow: none;
-  filter: grayscale(1) drop-shadow(0 0 1px #a6a6a6bd);
+  filter: grayscale(1) drop-shadow(0 0 1px #e8e0e0);
   transition: 0.5s;
   white-space: nowrap;
 }
@@ -299,7 +300,7 @@ ul.show {
   padding: 0.5em;
   width: 100%;
   border-radius: 5px;
-  background: #696969;
+  background: #e8e0e0;
   color: #000;
   text-align: center;
   text-decoration: none;
@@ -311,7 +312,6 @@ ul.show {
 #btn--yp:hover, #btn--yp:focus {
   outline: none;
   filter: grayscale(0) drop-shadow(0 0 1px crimson);
-  color: #000;
 }
 
 @keyframes float {
@@ -336,10 +336,10 @@ button {
   margin: 1em auto;
   padding: 0;
   position: relative;
-  width: 6em;
-  height: 1em;
+  width: 9em;
+  height: 3em;
   background: none;
-  font: 6em/1.07em advent pro, sans-serif;
+  font: 5em/3.21em advent pro, sans-serif;
   filter: contrast(0.5);
   transition: 0.3s;
   cursor: pointer;
@@ -373,11 +373,11 @@ button span[aria-hidden=true]:nth-child(2):after {
   clip-path: polygon(3% 21%, 85% 25%, 75% 93%, 14% 87%);
 }
 button span:last-child {
-  background: radial-gradient(black, rgb(156, 0, 0) 83%) 50% 0.125em/0.5em 50%;
+  background: radial-gradient(black, white 83%) 50% 0.125em/0.5em 50%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  filter: drop-shadow(2px 2px #00000093);
+  filter: drop-shadow(2px 2px #313131);
 }
 button:nth-of-type(2) {
   --hue: 187 ;
