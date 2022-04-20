@@ -262,61 +262,8 @@ ul.show {
   text-decoration: none;
   text-transform: uppercase;
 }
-/*
-.intro a:hover {
-  color: rgb(194, 0, 0);
-  background-color: rgba(0, 0, 0, 0.514);
-  border-radius: 25px;
-  padding: 10px;
-}
-*/
 
 /* ************ */
-
-.button-os {
-  box-sizing: content-box;
-  position: fixed;
-  z-index: 9;
-  bottom: 1em;
-  right: 1em;
-  border: solid 1em transparent;
-  width: 4.625em;
-  height: 3.25em;
-  font: 16px/1.25 trebuchet ms, sans-serif;
-  *text-indent: 1vw;
-  text-shadow: none;
-  filter: grayscale(1) drop-shadow(0 0 1px #e8e0e0);
-  transition: 0.5s;
-  white-space: nowrap;
-}
-.button-os:before {
-  box-sizing: inherit;
-  position: absolute;
-  left: 0;
-  bottom: -90%;
-  margin: 1em -0.05em;
-  padding: 0.5em;
-  width: 100%;
-  border-radius: 5px;
-  background: #7e0000c0;
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-  text-indent: 0vw;
-  white-space: normal;
-  animation: float 1s ease-in-out infinite alternate;
-  content: '🛠️ OJO CLINICO BIKE 🛠️';
-}
-.button-os:hover, .button-os:focus {
-  outline: none;
-  filter: grayscale(0) drop-shadow(0 0 1px crimson);
-}
-@keyframes float {
-  to {
-    transform: translateY(0.75em);
-  }
-}
-
 
 .btn__animation {
   height: 80vh;
@@ -342,7 +289,7 @@ button:hover {
 .button-os {
   position: absolute;
   width: 200px;
-  height: 65px;
+  height: 50px;
   top: 0;
   left: 0;
   right: 0;
@@ -370,10 +317,50 @@ button:hover {
 }
 
 .button-os a:hover {
-  letter-spacing: 5px;
+  letter-spacing: 8px;
 }
 
-
+.button-os {
+  box-sizing: content-box;
+  position: fixed;
+  z-index: 9;
+  bottom: 1em;
+  right: 1em;
+  border: solid 1em transparent;
+  font: 16px/1.25 trebuchet ms, sans-serif;
+  animation: float 1s ease-in-out infinite alternate;
+  text-shadow: none;
+  filter: grayscale(1) drop-shadow(0 0 1px #e8e0e0);
+  transition: 0.5s;
+  white-space: nowrap;
+}
+.button-os:before {
+  box-sizing: inherit;
+  position: absolute;
+  left: -0.3em;
+  bottom: -150%;
+  margin: 0.5em 0em;
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 5px;
+  background: #7e0000c0;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0vw;
+  white-space: normal;
+  animation: float 1s ease-in-out infinite alternate;
+  content: '🛠️ OJO CLINICO BIKE 🛠️';
+}
+.button-os:hover, .button-os:focus {
+  outline: none;
+  filter: grayscale(0) drop-shadow(0 0 1px crimson);
+}
+@keyframes float {
+  to {
+    transform: translateY(0.75em);
+  }
+}
 
 /* ************************ */
 
