@@ -9,6 +9,8 @@
     <meta name="author" content="Cesar">
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/img/favicon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/styles.css">
     <!--  Icons  -->
@@ -18,30 +20,42 @@
 </head>
 
 <body>
-    <div class="container__about">
+    <div class="container-fluid container__about">
         <!-- Grid -->
         <section class="area__encabezado">
             <header>
-                <nav class="menu">
-                    <label class="logo" for="">OJO CLINICO BIKE</label>
-                    <ul class="menu__items">
-                        <li><a href="../index.html">Home</a></li>
-                        <li class="action">Menu
-                            <ul>
-                                <li><a href="./services.html">Services</a></li>
-                                <li class="action">Nosotros
-                                    <ul>
-                                        <li><a href="./about.html">About</a></li>
-                                        <li><a href="./contact.html">Contact</a></li>
-                                        <li><a href="./location.html">Location</a></li>
+                <nav class="navbar fixed-top navbar-light bg-danger">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">OJO CLINICO BIKE</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Contact
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="location.html">Location</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                    <span class="btn__menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </span>
+                        </div>
+                    </div>
                 </nav>
             </header>
         </section>
@@ -49,28 +63,37 @@
         <section class="about area__about">
             <h1>OJO CLINICO BIKE</h1>
             <h3>🛠️ TALLER DE BICICLETAS</h3>
-            <p>La bicicleta ya tiene más de un siglo y medio de historia y nunca ha sido tan actual. Se trata del medio
-                de
-                transporte más democrático y sano que existe, porque mantiene la salud de su cuerpo, delplaneta y de su
-                bolsillo, ya que es barato, no contaminante y una actividad física supercompleta!</p>
-            <p>
-                Sea como medio de transporte, sea como forma de practicar ejercicios, o aún como el regalo delos sueños
-                de
-                los niños, la bicicleta juega un papel importante en nuestro día a día.
-                Entonces, decidimos poner en marcha nuestro proyecto...
-                Se trata de un taller para hacer reparaciones y mantenimiento de bicicletas. Nuestrosservicios prestados
-                puede ser para la conservación de la bicicleta, a fin de evitar problemas y accidentes, opuede ser la
-                reparación o cambio de alguna pieza, debido a un choque, mal uso, etc.
-            </p>
+            <div class="row text-center">
+                <p>La bicicleta ya tiene más de un siglo y medio de historia y nunca ha sido tan actual. Se trata del
+                    medio
+                    de
+                    transporte más democrático y sano que existe, porque mantiene la salud de su cuerpo, delplaneta y de
+                    su
+                    bolsillo, ya que es barato, no contaminante y una actividad física supercompleta!</p>
+                <p>
+                    Sea como medio de transporte, sea como forma de practicar ejercicios, o aún como el regalo delos
+                    sueños
+                    de
+                    los niños, la bicicleta juega un papel importante en nuestro día a día.
+                    Entonces, decidimos poner en marcha nuestro proyecto...
+                    Se trata de un taller para hacer reparaciones y mantenimiento de bicicletas. Nuestrosservicios
+                    prestados
+                    puede ser para la conservación de la bicicleta, a fin de evitar problemas y accidentes, opuede ser
+                    la
+                    reparación o cambio de alguna pieza, debido a un choque, mal uso, etc.
+                </p>
+            </div>
         </section>
 
         <footer>
-            <section class="area__footer">
+            <section class="row area__footer bg-danger">
                 <hr>
                 <div>
                     <div class="footer__info">
                         <div class="footer__item">
-                            <a href="../index.html"><h3>OJO CLINICO BIKE</h3></a>
+                            <a href="../index.html">
+                                <h3>OJO CLINICO BIKE</h3>
+                            </a>
                             <p>Ofrecemos soluciones ideales para resolver problemas simples o complejos que pueda
                                 presentar tu
                                 bici.
@@ -102,6 +125,7 @@
         <!--Final Grid -->
     </div>
     <!-- Scripts -->
+    <script src="/assets/scripts/bootstrap.bundle.js"></script>
     <script src="../assets/scripts/scripts.js"></script>
 </body>
 
