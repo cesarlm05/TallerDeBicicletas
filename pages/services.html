@@ -48,7 +48,8 @@
                                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Contact
                                     </a>
-                                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink"> <!-- dropdown-menu (Estoy usando la clase de Bootstrap para crear una lista desplegable) -->
+                                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                        <!-- dropdown-menu (Estoy usando la clase de Bootstrap para crear una lista desplegable) -->
                                         <li><a class="dropdown-item text-danger" href="location.html">Location</a></li>
                                         <li><a class="dropdown-item text-danger" href="contact.html">Contact</a></li>
                                     </ul>
@@ -64,43 +65,41 @@
             <section class="services">
                 <h1>Servicios</h1>
                 <!-- Tabla -->
-                <div class="table">
-                    <table>
-                        <!-- Me falta centrado en los campos de la Tabla -->
-                        <caption>Tabla de precios por Services</caption>
+                <!-- Tabla con los servicios Bootstrap -->
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover align-middle">
                         <thead>
                             <tr>
-                                <th>Servicio</th>
-                                <th>Incluye</th>
-                                <th>Precio</th>
-                                <th>Moneda</th>
+                                <th scope="col">Opción</th>
+                                <th scope="col">Servicio</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Precio</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+                                <th scope="row">1</th>
                                 <td>Service básico</td>
-                                <td>
-                                    Lavado completo.
+                                <td>Lavado completo.
                                     Limpieza de transmisión.
                                     Ajuste y puesta a punto de cambios.
-                                    Control y revisión de frenos.
-                                </td>
-                                <td class="precio">$2000</td>
-                                <td>Pesos</td>
+                                    Control y revisión de frenos.</td>
+                                <td class="price" >$2000</td>
                             </tr>
                             <tr>
+                                <th scope="row">2</th>
                                 <td>Service Pro</td>
-                                <td> Lavado completo.
+                                <td>Lavado completo.
                                     Limpieza de transmisión.
                                     Desarme completo.
                                     Revisión de todos los componentes.
                                     Limpieza y engrase de todas las partes móviles.
                                     Ajuste y puesta a punto de cambios.
-                                    Control y revisión de frenos. </td>
-                                <td class="precio">$3000</td>
-                                <td>Pesos</td>
+                                    Control y revisión de frenos.</td>
+                                <td class="price">$3000</td>
                             </tr>
                             <tr>
+                                <th scope="row">3</th>
                                 <td>Service Enterprise</td>
                                 <td>Lavado completo.
                                     Limpieza de transmisión.
@@ -110,19 +109,10 @@
                                     Ajuste y puesta a punto de cambios.
                                     Control y revisión de frenos.
                                     Purgado de frenos.
-                                    Centrado de ruedas. </td>
-                                <td class="precio">$5000</td>
-                                <td>Pesos</td>
+                                    Centrado de ruedas.</td>
+                                <td class="price">$5000</td>
                             </tr>
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>Servicio</th>
-                                <th>Incluye</th>
-                                <th>Precio</th>
-                                <th>Moneda</th>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
                 <div class="form">

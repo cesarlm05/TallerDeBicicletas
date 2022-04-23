@@ -29,7 +29,8 @@
                 <nav class="navbar fixed-top navbar-light bg-danger">
                     <!-- navbar (Estoy usando la clase de Bootstrap para crear una barra de navegación) -->
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">OJO CLINICO BIKE</a> <!-- navbar-brand (Estoy usando la clase de Bootstrap para crear una marca) -->
+                        <a class="navbar-brand" href="index.html">OJO CLINICO BIKE</a>
+                        <!-- navbar-brand (Estoy usando la clase de Bootstrap para crear una marca) -->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -72,24 +73,34 @@
                 <p>Ofrecemos a nuestros clientes soluciones ideales para resolver problemas simples o complejos que
                     pueda
                     presentar su bici, nuestro obetivo es brindar siempre el mejor servicio.</p>
-                
+
                 <button type="button" class="btn btn-danger"><a href="./pages/about.html">Nosotros</a></button>
                 <!-- Boton de navegacion -->
             </div>
         </section>
 
         <section class="row area__cards">
+            <!-- area__cards (Estoy usando la clase de Bootstrap para crear una tarjeta en Carrusel) -->
             <dir class="titulos">
                 <span class="title">
-                    <h4>Consejos útiles</h4>
+                    <h2>Consejos útiles</h2>
                 </span>
                 <span class="subtitle">
-                    <h6>Cuidado y mantenimiento de la bici</h6>
+                    <h5>Cuidado y mantenimiento de la bici</h5>
                 </span>
             </dir>
-            <div class="main__cards">
-                <ul class="list-unstyled">
-                    <li>
+            <!-- Carrusel Bootstrap -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
                         <a href="/pages/services.html" class="card">
                             <div class="inner">
                                 <h2 class="inner__title">Consejos para lavar correctamente tu bicicleta</h2>
@@ -104,8 +115,12 @@
                                     cuenta.<time>
                             </div>
                         </a>
-                    </li>
-                    <li>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="inner__title"><a class="inner__service" href="/pages/services.html">Ir a los
+                                    Servicios</a></h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
                         <a href="/pages/services.html" class="card card2">
                             <div class="inner">
                                 <h2 class="inner__title">¿Sabes cuando hay que cambiar la cadena?</h2>
@@ -120,8 +135,12 @@
                                     factores.<time>
                             </div>
                         </a>
-                    </li>
-                    <li>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="inner__title"><a class="inner__service" href="/pages/services.html">Ir a los
+                                    Servicios</a></h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
                         <a href="/pages/services.html" class="card card3">
                             <div class="inner">
                                 <h2 class="inner__title">Cómo tubelizar las ruedas de tu bicicleta</h2>
@@ -138,8 +157,22 @@
                                     tipo de bicicletas; mtb, gravel y carretera).<time>
                             </div>
                         </a>
-                    </li>
-                </ul>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="inner__title"><a class="inner__service" href="/pages/services.html">Ir a los
+                                    Servicios</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 

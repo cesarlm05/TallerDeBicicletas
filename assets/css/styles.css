@@ -120,7 +120,7 @@ header nav a {
   padding: 25px;
   margin: 15px;
 }
-.intro a{
+.intro a {
   text-decoration: none;
   color: #fff;
 }
@@ -222,6 +222,16 @@ header nav a {
   color: #ffffff;
   text-align: center;
 }
+.inner__service {
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+}
+.inner__service:hover {
+  color: rgb(194, 0, 0);
+}
 
 /* ************ */
 
@@ -304,58 +314,28 @@ header nav a {
   border-radius: 25px;
   margin-top: 100px;
 }
+.table-responsive {
+  display: block;
+  width: 90%;
+  margin: 25px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
 .table {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 30px;
-  padding: 20px;
-  text-align: center;
-  border: #fff 3px solid;
-}
-.precio {
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #00000081;
-  padding: 10px;
-  border-radius: 25px;
-  justify-content: center;
-}
-.table :hover {
-  color: rgb(128, 0, 0);
-  background-color: #d6d6d648;
-  padding: 5px;
-  border-radius: 25px;
-}
-th,
-td {
-  width: 25%;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid #fff;
+  width: 100%;
   border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
 }
-th {
-  letter-spacing: 2px;
-  font-size: 15px;
+.price {
+  font-size: 16px;
   font-weight: bold;
-  background-color: #00000081;
-  color: #fff;
   text-align: center;
-}
-td {
-  color: #fff;
-  letter-spacing: 1px;
-  justify-content: center;
-  vertical-align: baseline;
-}
-tbody td {
-  text-align: center;
-}
-tfoot th {
-  text-align: center;
+  padding: 10px;
 }
 
 /* Area Bulid */
@@ -393,14 +373,20 @@ tfoot th {
   margin: 15px;
 }
 .build iframe {
-  width: 50vw;
-  height: 50vh;
+  width: 65vw;
+  height: 60vh;
+  border: solid 5px;
+  border-color: rgb(4, 4, 4) !important;
+  border-radius: 10%;
+}
+.build iframe:hover {
+  border-color: rgb(194, 0, 0) !important;
 }
 
 /* Form */
 .form {
-margin-top: 40px 0 40px 0;
-padding-bottom: auto;
+  margin-top: 40px 0 40px 0;
+  padding-bottom: auto;
 }
 form fieldset {
   border: 0;
@@ -636,35 +622,35 @@ footer a:hover {
 /* Animaciones */
 
 .rotate-scale-up {
-	-webkit-animation: rotate-scale-up 0.65s linear both;
-	        animation: rotate-scale-up 0.65s linear both;
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
 }
 @-webkit-keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
   50% {
     -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
   }
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }
 @keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
   50% {
     -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
   }
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }
 
