@@ -267,21 +267,24 @@ ul.show {
   padding: 25px;
   margin: 15px;
 }
-.intro a {
+.intro a{
+  text-decoration: none;
+  color: #fff;
+}
+.intro .btn {
   font-size: 25px;
   font-weight: bold;
   color: #fff;
-  background-color: rgb(194, 0, 0);
-  text-decoration: none;
+  *background-color: rgb(194, 0, 0);
   text-transform: uppercase;
-  border-radius: 25px;
+  *border-radius: 25px;
   padding: 10px;
   margin-top: 20px;
 }
-.intro a:hover {
+.intro .btn:hover {
   color: rgb(194, 0, 0);
   background-color: rgba(0, 0, 0, 0.514);
-  border-radius: 25px;
+  *border-radius: 25px;
   padding: 10px;
 }
 
@@ -389,6 +392,7 @@ ul.show {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin-top: 30px;
 }
 .about h1 {
   display: flex;
@@ -438,6 +442,7 @@ ul.show {
   background-attachment: fixed;
   color: #fff;
   text-align: center;
+  padding-bottom: 30px;
 }
 .services h1 {
   font-size: 50px;
@@ -540,31 +545,38 @@ tfoot th {
 }
 
 /* Form */
+.form {
+margin-top: 40px 0 40px 0;
+padding-bottom: auto;
+}
 form fieldset {
   border: 0;
 }
 .form__body {
   width: 400px;
-  height: 800px;
-  margin-left: 6%;
+  height: 650px;
   background-color: rgba(126, 126, 126, 0.6);
   border: 1px solid rgb(184, 0, 0);
   border-radius: 8px;
   padding: 20px 9px 0px 9px;
   text-align: center;
+  align-items: center;
   float: left;
 }
 .form__body input {
+  font-size: 12px;
   width: 70%;
   margin-top: 5%;
   padding: 5%;
 }
 .form__body select {
+  font-size: 12px;
   width: 70%;
   margin-top: 5%;
   padding: 5%;
 }
 .form__body textarea {
+  font-size: 12px;
   width: 70%;
   margin-top: 5%;
   padding: 5%;
@@ -576,15 +588,15 @@ form fieldset {
   background-color: rgba(255, 0, 0, 0.795);
 }
 #send {
-  font-size: 20px;
+  font-size: 18px;
 }
 .consent {
+  font-size: 16px;
   display: inline-block;
   flex-direction: row;
   align-items: center;
 }
 #consent {
-  font-size: 20px;
   width: 10px;
   height: 10px;
 }
@@ -658,6 +670,8 @@ form fieldset {
 .area__contact__section {
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
   width: 100%;
   margin-bottom: 15px;
   background: linear-gradient(to right, #00000099 100%, #00000099 100%),
@@ -668,10 +682,9 @@ form fieldset {
   background-attachment: fixed;
   color: #fff;
 }
-.form__body {
-  margin: 35px;
-}
+
 .contact__intro {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -701,6 +714,24 @@ form fieldset {
   padding: 10px;
   margin-top: 20px;
 }
+.contact__intro a:hover {
+  box-shadow: 0px 0px 25px rgb(59, 0, 0);
+  transition: all 1s;
+  border-radius: 15px;
+  background-color: rgba(255, 0, 0, 0.795);
+}
+
+.container__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 50px 0px 50px 0px;
+  color: #fff;
+}
+
 /* ************** */
 /* Footer */
 
@@ -732,16 +763,23 @@ footer a:hover {
   transition: 0.4s;
 }
 .contact__footer {
-  font-size: 1em;
+  font-size: 1.5em;
   padding: 4 10px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 .redes {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   width: 10px;
   height: 10px;
+}
+.redes a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 0 15px 0 25px;
 }
 
 /* ********** */
