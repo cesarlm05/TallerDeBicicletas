@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="taller">
-    <meta name="author" content="Cesar">
+    <meta name="description" content="web taller de Bicicletas">
+    <meta name="author" content="Cesar L. Medina">
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/img/favicon.png">
     <!-- Bootstrap -->
@@ -63,10 +63,13 @@
 
         <div class="row area__service">
             <section class="services">
-                <h1>Servicios</h1>
+                <!-- Animaciones en h1 y table 'animista.net'   -->
+                <span class="rotate-vert-center">
+                    <h1>Servicios</h1>
+                </span>
                 <!-- Tabla -->
                 <!-- Tabla con los servicios Bootstrap -->
-                <div class="table-responsive">
+                <div class="table-responsive rotate-vert-center">
                     <table class="table table-dark table-hover align-middle">
                         <thead>
                             <tr>
@@ -84,7 +87,7 @@
                                     Limpieza de transmisión.
                                     Ajuste y puesta a punto de cambios.
                                     Control y revisión de frenos.</td>
-                                <td class="price" >$2000</td>
+                                <td class="price">$2000</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -116,6 +119,7 @@
                     </table>
                 </div>
                 <div class="form">
+                    <!-- Estoy usando la Pseudoclase :hover para el form -->
                     <form class="form__body" action="../index.html" method="post">
                         <fieldset>
                             <!-- Se me complicó el diseño del fielset -->
@@ -149,6 +153,7 @@
         <div class="row area__build">
             <section class="build">
                 <div class="ifrem">
+                    <!-- Estoy usando la Pseudoclase :hover para el iframe -->
                     <h4>También hacemos servicio de armado a pedido.</h4>
                     <iframe src="https://www.youtube.com/embed/7R2y_ESKy88" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -159,12 +164,13 @@
 
         <footer>
             <section class="row area__footer bg-danger">
+                <!-- Footer aplico background de Bootstrap -->
                 <hr>
                 <div>
                     <div class="footer__info">
                         <div class="footer__item">
                             <a href="../index.html">
-                                <h3>OJO CLINICO BIKE</h3>
+                                <h4>OJO CLINICO BIKE</h4>
                             </a>
                             <p>Ofrecemos soluciones ideales para resolver problemas simples o complejos que pueda
                                 presentar tu
@@ -172,13 +178,15 @@
                             </p>
                         </div>
                         <div class="footer__item">
-                            <a class="contact__footer" href="/pages/contact.html">Contacto</a>
+                            <a class="contact__footer" href="./contact.html">
+                                <h4>Contacto</h4>
+                            </a>
                             <p>Por cualquier duda o comentario que quieras dejarnos contactanos aquí.</p>
 
                             <mail><a href="mailto:ojo.clinico.bike@gmail.com">info@ojoclinicobike.com.ar</a></mail>
                         </div>
                         <div class="footer__item">
-                            <h3>Redes sociales</h3>
+                            <h4>Redes sociales</h4>
                             <div class="redes">
                                 <a href="https://www.facebook.com/OjoClinicoBike/" target="_blank"><i
                                         class="fa-brands fa-facebook"></i></a>
