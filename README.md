@@ -1,6 +1,6 @@
 # Taller de bicicletas
 
-### SEGUNDA ENTREGA DEL PROYECTO FINAL
+### SEGUNDA ENTREGA DEL PROYECTO FINAL.
 
 Proyecto de mi primera Web para Coderhouse.
 
@@ -15,7 +15,7 @@ Para el maquetado usé etiquetas no sólo para armar contenido, sino para armar 
 que van a conformar el layout de la web, como por ejemplo los conteiner, section, div, etc.
 También se podrá hacer lectura de comentarios en todo el proyecto para que sea más fácil la evaluación del mismo. 
 
-## Demo del proyecto
+## Demo del proyecto.
 
 Haz clic aquí [TallerDeBicicletas](https://github.com/cesarlm05/TallerDeBicicletas.git).
 
@@ -23,7 +23,7 @@ Haz clic aquí [TallerDeBicicletas](https://github.com/cesarlm05/TallerDeBicicle
 git clone https://github.com/cesarlm05/TallerDeBicicletas.git
 ```
 
-## Parte del navbar
+## Parte del navbar.
 
 ```html
  <nav class="navbar fixed-top navbar-light bg-danger">
@@ -36,7 +36,7 @@ git clone https://github.com/cesarlm05/TallerDeBicicletas.git
                         </button>
 ```
 
-## Parte del navbar @Media + Pseudoclases
+## Parte del navbar @Media + Pseudoclases.
 ```css
 /* Responsive @Media */
 
