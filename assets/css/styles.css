@@ -385,7 +385,7 @@ header nav a {
 }
 /* Pseudoclase :hover */
 .build iframe:hover {
-  border-color: rgb(194, 0, 0) !important;
+  border-color: rgb(255, 0, 0) !important;
 }
 
 /* Form */
@@ -428,7 +428,9 @@ form fieldset {
 
 /* Pseudoclase :hover */
 .form__body input:hover {
-  background-color: rgba(137, 126, 0, 0.6);
+  background-color: rgba(169, 195, 1, 0.357);
+  color: #000;
+  font-size: medium;
 }
 .form__body :hover {
   box-shadow: 0px 0px 25px rgb(59, 0, 0);
@@ -487,14 +489,14 @@ form fieldset {
 }
 .map {
   width: 100vw;
-  height: 90vh;
+  height: 80vh;
   border-radius: 25px;
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
 }
 .map iframe {
-  width: 100%;
+  width: 80%;
   height: 100%;
   border-radius: 25px;
 }
@@ -694,8 +696,8 @@ footer a:hover {
 }
 
 .bounce-in-bck {
-	-webkit-animation: bounce-in-bck 1.1s both;
-	        animation: bounce-in-bck 1.1s both;
+	-webkit-animation: bounce-in-bck 1.5s both;
+	        animation: bounce-in-bck 1.5s both;
 }
 
 @-webkit-keyframes bounce-in-bck {
