@@ -63,6 +63,13 @@ git clone https://github.com/cesarlm05/TallerDeBicicletas.git
 .build iframe:hover {
   border-color: rgb(194, 0, 0) !important;
 }
+
+/* Pseudoclase :hover */
+.form__body input:hover {
+  background-color: rgba(169, 195, 1, 0.357);
+  color: #000;
+  font-size: medium;
+}
 ```
 
 ## El proyecto trata de la web de mi propio Taller de Bicis.
