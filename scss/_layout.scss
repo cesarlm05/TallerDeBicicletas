@@ -1,0 +1,60 @@
+/* Layouts */
+
+/* Grid para Index */
+
+.container__index {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "area__encabezado"
+    "area__intro"
+    "area__cards"
+    "area__footer";
+}
+
+/* Grid para About */
+
+.container__about {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "area__encabezado"
+    "area__about"
+    "area__footer";
+}
+
+/* Grid para Contact */
+
+.container__contact {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "area__encabezado"
+    "area__contact"
+    "area__footer";
+}
+
+/* Grid para Location */
+
+.container__location {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "area__encabezado"
+    "area__location"
+    "area__footer";
+}
+
+/* Grid para Service */
+
+.container__service {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "area__encabezado"
+    "area__services"
+    "area__build"
+    "area__footer";
+}
+
+/* **************** */

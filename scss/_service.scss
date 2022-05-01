@@ -1,0 +1,107 @@
+/* ************ */
+
+.area__services {
+  grid-area: area__services;
+}
+
+/* Services */
+/* Tabla */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      to right,
+      $tertiary-color 100%,
+      $tertiary-color 100%
+    ),
+    url("/assets/img/un-taller.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $primary-color;
+  text-align: center;
+  padding-bottom: 30px;
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 100px;
+  }
+}
+
+.table-responsive {
+  display: block;
+  width: 90%;
+  margin: 25px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: $octonary-color;
+}
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Area Bulid */
+.area__build {
+  grid-area: area__build;
+}
+
+/* Build*/
+.build {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(
+      to right,
+      $tertiary-color 100%,
+      $tertiary-color 100%
+    ),
+    url("/assets/img/taller.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  h4 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    color: $primary-color;
+  }
+  p {
+    color: $primary-color;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 15px;
+  }
+  iframe {
+    width: 65vw;
+    height: 60vh;
+    border: solid 5px;
+    border-color: $septenary-color !important;
+    border-radius: 10%;
+    &:hover {
+      border-color: $nineth-color !important;
+    }
+  }
+}

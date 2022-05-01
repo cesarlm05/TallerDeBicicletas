@@ -1,0 +1,16 @@
+/* Variables */
+$primary-color: #fff;
+$secondary-color: #333;
+$tertiary-color: rgba(51, 51, 51, 0.65);
+$quaternary-color: rgb(223, 71, 89);
+$quinary-color: rgb(194, 0, 0);
+$senary-color: rgba(126, 126, 126, 0.6);
+$septenary-color: rgb(0, 0, 0);
+$octonary-color: grey;
+$nineth-color: red;
+
+/* Mixins */
+@mixin fontStyles($color1, $color2) {
+  color: $color1;
+  background-color: $color2;
+}

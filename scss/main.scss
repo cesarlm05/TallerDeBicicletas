@@ -1,0 +1,23 @@
+/* *** Imports *** */
+/* Fuentes */
+@import url("/assets/fonts/Hack/Hack\ Regular\ Nerd\ Font\ Complete\ Mono.ttf");
+/*font-face {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+}*/
+@import "base";
+/* EStilos generales del proyecto */
+body {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  @include fontStyles($primary-color, $secondary-color);
+}
+@import "layout";
+@import "components";
+@import "index";
+@import "about";
+@import "contact";
+@import "service";
+@import "location";
+@import "medias";
