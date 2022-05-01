@@ -115,15 +115,26 @@ git clone https://github.com/cesarlm05/TallerDeBicicletas.git
 
 ## Parte del navbar
 
-```html
- <nav class="navbar fixed-top navbar-light bg-danger">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="/index.html">OJO CLINICO BIKE</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+```sass
+/* Menú */
+/* Retocando estilos de Bootstrap */
+header nav a {
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem;
+  transition: 0.5s;
+  text-align: center;
+  &:hover {
+    background-color: $tertiary-color;
+    padding: 15px;
+    border-radius: 25px;
+    transform: scale(1.1);
+    transform: translateX(5px);
+    text-transform: uppercase;
+    transition: 0.8s;
+  }
+}
 ```
 
 ## Parte del navbar @Media + Pseudoclases
