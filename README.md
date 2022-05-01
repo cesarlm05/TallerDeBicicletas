@@ -30,3 +30,4 @@ Ofrecemos a nuestros clientes soluciones ideales para resolver problemas simples
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+Todos los derechos reservados &copy; 2021 - Developed by César L. Medina
