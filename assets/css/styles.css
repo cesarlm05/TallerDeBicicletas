@@ -79,6 +79,7 @@ body {
   grid-area: area__encabezado;
 }
 /* Menú */
+/* Retocando estilos de Bootstrap */
 header nav a {
   font-size: 1rem;
   font-weight: 700;
