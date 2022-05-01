@@ -79,17 +79,16 @@ div {
   "version": "1.0.0",
   "description": "Proyecto de mi primera Web para Coderhouse.",
   "main": "index.js",
-  "dependencies": {...
+  "dependencies": {
   // => Aquí van todas las dependencias.
   }
-
-// => Es aquí en donde debemos agregar dos lineas.
-// => Esto hace seguimiento automático de nuestros archivos .scss y .css
+  // => Es aquí en donde debemos agregar dos lineas.
+  // => Esto hace seguimiento automático de nuestros archivos .scss y .css
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-// => build-css determina la ruta del archivo de salida .css
+  // => build-css determina la ruta del archivo de salida .css
     "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
-// => watch-css mira los cambios en el archivo .scss
+  // => watch-css mira los cambios en el archivo .scss
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
