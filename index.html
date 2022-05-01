@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="taller">
-    <meta name="author" content="Cesar">
+    <meta name="description" content="web taller de Bicicletas">
+    <meta name="author" content="Cesar L. Medina">
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/img/favicon.png">
     <!-- Bootstrap -->
@@ -55,8 +55,10 @@
                                     <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
                                         <!-- dropdown-menu (Estoy usando la clase de Bootstrap para crear una lista desplegable) -->
                                         <li><a class="dropdown-item text-danger"
-                                                href="./pages/location.html">Location</a></li>
-                                        <li><a class="dropdown-item text-danger" href="./pages/contact.html">Contact</a>
+                                                href="./pages/location.html">Location</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-danger" 
+                                            href="./pages/contact.html">Contact</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -73,8 +75,9 @@
                 <p>Ofrecemos a nuestros clientes soluciones ideales para resolver problemas simples o complejos que
                     pueda
                     presentar su bici, nuestro obetivo es brindar siempre el mejor servicio.</p>
-
-                <button type="button" class="btn btn-danger"><a href="./pages/about.html">Nosotros</a></button>
+                <!-- Boton de Navegación con animación animista.net -->
+                <button type="button" class="rotate-vert-center btn btn-danger"><a
+                        href="./pages/about.html">Nosotros</a></button>
                 <!-- Boton de navegacion -->
             </div>
         </section>
@@ -89,14 +92,16 @@
                     <h5>Cuidado y mantenimiento de la bici</h5>
                 </span>
             </dir>
+
             <!-- Carrusel Bootstrap -->
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+            <div id="carousel__captions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    <button type="button" data-bs-target="#carousel__captions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carousel__captions" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carousel__captions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
@@ -163,12 +168,12 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel__captions"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel__captions"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -183,20 +188,25 @@
                 <div>
                     <div class="footer__info">
                         <div class="footer__item">
-                            <h3>OJO CLINICO BIKE</h3>
+                            <a href="../index.html">
+                                <h4>OJO CLINICO BIKE</h4>
+                            </a>
                             <p>Ofrecemos soluciones ideales para resolver problemas simples o complejos que pueda
                                 presentar tu
                                 bici.
                             </p>
                         </div>
                         <div class="footer__item">
-                            <a class="contact__footer" href="./pages/contact.html">Contacto</a>
+                            <a class="contact__footer" href="./pages/contact.html">
+                                <h4>Contacto</h4>
+                            </a>
                             <p>Por cualquier duda o comentario que quieras dejarnos contactanos aquí.</p>
 
                             <mail><a href="mailto:ojo.clinico.bike@gmail.com">info@ojoclinicobike.com.ar</a></mail>
                         </div>
                         <div class="footer__item">
-                            <h3>Redes sociales</h3>
+                            <h4>Redes sociales</h4>
+                            <!-- Iconos desde CDN fontawesome -->
                             <div class="redes">
                                 <a href="https://www.facebook.com/OjoClinicoBike/" target="_blank"><i
                                         class="fa-brands fa-facebook"></i></a>
