@@ -115,7 +115,7 @@ git clone https://github.com/cesarlm05/TallerDeBicicletas.git
 
 ## Parte del navbar
 
-```sass
+```scss
 /* Menú */
 /* Retocando estilos de Bootstrap */
 header nav a {
