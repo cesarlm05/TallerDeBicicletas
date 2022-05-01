@@ -79,7 +79,7 @@ div {
   "version": "1.0.0",
   "description": "Proyecto de mi primera Web para Coderhouse.",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {...
   // => Aquí van todas las dependencias.
   }
 
