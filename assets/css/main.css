@@ -48,10 +48,7 @@ body {
   grid-template-areas: "area__encabezado" "area__services" "area__build" "area__footer"; }
 
 /* **************** */
-/* **************** */
 /* Components */
-/* Variables */
-/* Mixins */
 .area__encabezado {
   grid-area: area__encabezado; }
 
