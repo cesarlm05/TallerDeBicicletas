@@ -246,6 +246,12 @@
   .build h4 {
     font-size: 20px;
   }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 640px) {
   .inner__title {
@@ -307,6 +313,21 @@
   }
   .build h4 {
     font-size: 16px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    a{
+      font-size: 8px;
+    }
+  }
+  .footer__into{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 480px) and (orientation: landscape) {
