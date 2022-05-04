@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* *** Imports *** */
 /* Fuentes */
-@import url("/assets/fonts/Hack/Hack Regular Nerd Font Complete Mono.ttf");
+@import url("../fonts/Hack/Hack Regular Nerd Font Complete Mono.ttf");
 /*font-face {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -192,7 +192,7 @@ form fieldset {
   color: #fff;
   width: 100%;
   height: 80vh;
-  background: linear-gradient(to right, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url("/assets/img/taller.png");
+  background: linear-gradient(to right, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url("../img/taller.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -267,16 +267,16 @@ form fieldset {
   align-items: flex-end;
   text-decoration: none;
   border: 1px solid #c20000;
-  background-image: url("/assets/img/lavar.jpg");
+  background-image: url("../img/lavar.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 
 .card2 {
-  background-image: url("/assets/img/herramientas-basicas.jpg"); }
+  background-image: url("../img/herramientas-basicas.jpg"); }
 
 .card3 {
-  background-image: url("/assets/img/tubeless.png"); }
+  background-image: url("../img/tubeless.png"); }
 
 .inner {
   height: 50%;
@@ -326,7 +326,7 @@ form fieldset {
   justify-content: center;
   width: 100%;
   height: 70vh;
-  background: linear-gradient(to right, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url("/assets/img/un-taller.jpeg");
+  background: linear-gradient(to right, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url("../img/un-taller.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -369,7 +369,7 @@ form fieldset {
   justify-content: center;
   width: 100%;
   margin-bottom: 15px;
-  background: linear-gradient(to right, rgba(51, 51, 51, 0.65) 100%, rgba(51, 51, 51, 0.65) 100%), url("/assets/img/valvulas.png");
+  background: linear-gradient(to right, rgba(51, 51, 51, 0.65) 100%, rgba(51, 51, 51, 0.65) 100%), url("../img/valvulas.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -427,7 +427,7 @@ form fieldset {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, rgba(51, 51, 51, 0.65) 100%, rgba(51, 51, 51, 0.65) 100%), url("/assets/img/un-taller.jpeg");
+  background: linear-gradient(to right, rgba(51, 51, 51, 0.65) 100%, rgba(51, 51, 51, 0.65) 100%), url("../img/un-taller.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -477,7 +477,7 @@ form fieldset {
   justify-content: center;
   width: 100%;
   height: 70vh;
-  background: linear-gradient(to right, rgba(51, 51, 51, 0.65) 100%, rgba(51, 51, 51, 0.65) 100%), url("/assets/img/taller.png");
+  background: linear-gradient(to right, rgba(51, 51, 51, 0.65) 100%, rgba(51, 51, 51, 0.65) 100%), url("../img/taller.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
