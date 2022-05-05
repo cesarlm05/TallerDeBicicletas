@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* *** Imports *** */
 /* Fuentes */
-@import url("../fonts/Hack/Hack Regular Nerd Font Complete Mono.ttf");
+@import url("/assets/fonts/Hack/Hack Regular Nerd Font Complete.ttf");
 /*font-face {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat Alternates', sans-serif;
