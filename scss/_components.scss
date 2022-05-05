@@ -38,64 +38,61 @@ header nav a {
 /* Footer */
 .area__footer {
   grid-area: area__footer;
-}
-/* Footer */
-.area__footer{
   width: 100%;
-  background-color: rgb(223, 71, 89);;
-}
-.area__footer .footer__item{
-  width: 100%;
-  *max-width: 1200px;
-  margin: auto;
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap:50px;
-  padding: 35px 0px;
-}
-.area__footer .footer__item .social figure{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.area__footer .footer__item .social figure img{
-  width: 100px;
-  border-radius: 50%;
-}
-.area__footer .footer__item .social h2{
-  color: #fff;
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-.area__footer .footer__item .social p{
-  color: #efefef;
-  margin-bottom: 10px;
-}
-.area__footer .footer__item .red-social a{
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  margin-right: 10px;
-  background-color: rgba(51, 51, 51, 0.65);;
-  text-align: center;
-  transition: all 300ms ease;
-}
-.area__footer .footer__item .red-social a:hover{
-  color: aqua;
-}
-.area__footer .copyright{
-  background-color: #333;
-  padding: 15px 10px;
-  text-align: center;
-  color: #fff;
-}
-.area__footer .copyright small{
-  font-size: 15px;
+  background-color: $quaternary-color;
+  .footer__item {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 35px 0px;
+    .social figure {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100px;
+        border-radius: 50%;
+      }
+    }
+    .social h2 {
+      color: $primary-color;
+      margin-bottom: 25px;
+      font-size: 20px;
+    }
+    .social p {
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+    .red-social a {
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: $primary-color;
+      margin-right: 10px;
+      background-color: $tertiary-color;
+      text-align: center;
+      transition: all 300ms ease;
+      &:hover {
+        color: $quaternary-color;
+      }
+    }
+  }
+  .copyright {
+    background-color: $secondary-color;
+    padding: 15px 10px;
+    text-align: center;
+    color: $primary-color;
+    small {
+      font-size: 15px;
+    }
+  }
 }
 
 /* Form */
