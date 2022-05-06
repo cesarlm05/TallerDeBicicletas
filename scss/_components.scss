@@ -22,7 +22,6 @@ header nav a {
     transition: 0.8s;
   }
 }
-
 .dropdown-menu {
   text-align: center;
   a:hover {
@@ -110,7 +109,6 @@ header nav a {
     }
   }
 }
-
 /* Form */
 .form {
   margin-top: 40px 0 40px 0;
@@ -135,8 +133,7 @@ form fieldset {
     margin-top: 5%;
     padding: 5%;
     &:hover {
-      background-color: $senary-color;
-      color: $septenary-color;
+      @include fontStyles($septenary-color, $senary-color);
       font-size: medium;
     }
   }

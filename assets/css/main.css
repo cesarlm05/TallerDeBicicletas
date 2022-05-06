@@ -45,7 +45,7 @@ body {
 .container__service {
   height: 100vh;
   display: grid;
-  grid-template-areas: "area__encabezado" "area__services" "area__build" "area__footer"; }
+  grid-template-areas: "area__encabezado" "area__service" "area__build" "area__footer"; }
 
 /* **************** */
 /* Components */
@@ -169,8 +169,8 @@ form fieldset {
     margin-top: 5%;
     padding: 5%; }
     .form__body input:hover {
-      background-color: rgba(126, 126, 126, 0.6);
       color: black;
+      background-color: rgba(126, 126, 126, 0.6);
       font-size: medium; }
   .form__body select {
     font-size: 12px;
@@ -439,12 +439,12 @@ form fieldset {
   color: #fff; }
 
 /* ************ */
-.area__services {
-  grid-area: area__services; }
+.area__service {
+  grid-area: area__service; }
 
-/* Services */
+/* service */
 /* Tabla */
-.services {
+.service {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -457,7 +457,7 @@ form fieldset {
   color: #fff;
   text-align: center;
   padding-bottom: 30px; }
-  .services h1 {
+  .service h1 {
     font-size: 50px;
     font-weight: bold;
     padding: 10px;
@@ -761,7 +761,7 @@ form fieldset {
     font-size: 25px; }
   .location h4 {
     font-size: 16px; }
-  .services h1 {
+  .service h1 {
     font-size: 40px; }
   th {
     font-size: 12px; }
@@ -805,7 +805,7 @@ form fieldset {
     font-size: 20px; }
   .location h4 {
     font-size: 12px; }
-  .services h1 {
+  .service h1 {
     font-size: 30px; }
   th {
     font-size: 10px; }
