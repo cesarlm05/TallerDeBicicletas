@@ -85,7 +85,9 @@ header nav a {
 .area__footer {
   grid-area: area__footer;
   width: 100%;
-  background-color: #df4759; }
+  background-color: #df4759;
+  margin-left: calc(0 * var(--bs-gutter-x));
+  /* 0em - Reseteo margin de Bootstrap */ }
   .area__footer .footer__item {
     width: 100%;
     max-width: 100%;
@@ -110,6 +112,18 @@ header nav a {
     .area__footer .footer__item .social p {
       color: #fff;
       margin-bottom: 10px; }
+      .area__footer .footer__item .social p a {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.5s; }
+        .area__footer .footer__item .social p a:hover {
+          color: #333;
+          transition: 0.5s; }
+      .area__footer .footer__item .social p i {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px; }
     .area__footer .footer__item .red-social a {
       display: inline-block;
       text-decoration: none;
