@@ -39,11 +39,10 @@
     border-radius: 25px;
   }
   p {
-    display: flex;
+    display: block-inline;
     color: $primary-color;
     font-size: 16px;
     font-weight: bold;
-    padding: 15px;
-    margin: 15px;
+    padding: 25px;
   }
 }
