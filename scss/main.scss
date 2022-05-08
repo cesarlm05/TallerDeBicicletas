@@ -1,16 +1,13 @@
 @import "base";
 /* EStilos generales del proyecto */
 body {
-  font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
-  @include fontStyles($primary-color, $secondary-color);
+  @include fontStyles(
+    12px,
+    $primary-color,
+    $secondary-color
+  ); /* Fuente y color de texto */
 }
-@import "layout";
-@import "components";
-@import "index";
-@import "about";
-@import "contact";
-@import "service";
-@import "location";
-@import "medias";
+@import "layout", "components", "index", "about", "contact", "service",
+  "location", "medias";

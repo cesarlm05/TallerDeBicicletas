@@ -105,6 +105,171 @@ div {
 }
 ```
 
+## SASS II (Clase 14).
+### OPERADORES, CONDICIONALES Y BUCLES
+
+OPERADORES: Con SASS puedes realizar operaciones
+matemáticas básicas en la misma hoja
+de estilo, y es tan sencillo como poner
+el símbolo aritmético adecuado.
+
+```css
+$ancho: 720px;
+$blue: #4285F4;
+$green: #33D374;
+.box_uno {
+ background-color: $blue;
+ width: $ancho/2; /* Ancho de 360*/
+}
+.box_dos {
+ background-color: $green;
+ width: ($ancho/2)-50;
+}
+```
+
+CONDICIONALES: Permiten establecer reglas para validar si se aplica o no una acción, cambio o
+asignación en el atributo de un elemento. Estas condiciones podrán incluir
+comparadores típicos (==, !=, <, >) entre variables, constantes o cualquier
+expresión intermedia.
+ If: (Si condicional)
+Sólo en caso de cumplirse la condición, se ejecutará la generación de código del
+bloque asociado.
+
+```css
+$vista:mobile;
+body{
+@if $vista == desktop {
+@media only screen and (min-width:1024px){
+h1{font-size:$h1Desktop;}
+h3{font-size:35px;}
+p{font-size:$parrafoDesktop;}
+}
+} @else if $vista == mobile {
+@media only screen and (max-width:767px){
+h1{font-size:$h1Mobile;}
+h3{font-size:25px;}
+p{font-size:$parrafoMobile;}
+}
+} @else {
+h1{font-size:34px;}
+h3{font-size:25px;}
+p{font-size:20px;}
+}
+}
+```
+
+BUCLES: Un bucle es una secuencia que repite más de una vez una porción de código,
+dada cierta condición. Cuando la misma deja de cumplirse, el bucle finaliza.
+
+FOR:
+```css
+@for $var from [to|through] {
+ //Bloque de reglas donde podrás utilizar $var mediante interpolación
+}
+```
+$var será el nombre de la variable que queramos utilizar en nuestro bloque.
+Tanto <start> como <end> tendrán que ser expresiones SassScript válidas, que devuelvan
+números enteros. Por último, si indicamos ‘through’ se tendrán en cuenta los valores <start> y
+<end> dentro del bucle; si utilizamos ‘to’, no se tendrá en cuenta el valor <end> dentro del bucle.
+
+EACH: La regla @each facilita la emisión de estilos, o la evaluación del código para
+cada elemento de una lista, o cada par en un mapa.
+Es posible definir una estructura @each de la siguiente manera:
+
+```css
+@each $var in {
+ //Bloque de reglas donde podremos utilizar $var mediante interpolación
+}
+```
+En este caso, <list> será cualquier expresión que devuelva una lista de
+elementos SassScript válida, es decir, una sucesión de elementos separados
+por comas.
+
+```css
+@each $color in blue, yellow, black {
+#{$color}{
+color:#{$color}; }
+}
+```
+
+# MAPS
+Los mapas son variables cuyo valor es una colección de variables. Se definen
+con un nombre que los identifica. Las claves suelen ser cadenas o números,
+mientras que los valores pueden ser cualquier tipo de dato.
+Ejemplo: suponte que se necesita crear una serie de botones para compartir
+contenido y te exigen tres de diferente color. Para no crearlos uno a uno,
+generas un mapa con clave “el botón” y valor “el color que tendrá”.
+
+```css
+$map: (key1: value1, key2: value2, key3: value3);
+```
+
+Ejemplo: 
+
+```css
+// En _base.scss declaro un map de colores (variables).
+// Maps
+$colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  tertiary: $tertiary-color,
+  quaternary: $quaternary-color,
+  quinary: $quinary-color,
+  senary: $senary-color,
+  septenary: $septenary-color,
+  octonary: $octonary-color,
+  nineth: $nineth-color,
+);
+```
+En donde hago uso de map-get()
+```css
+// En page service.scss uso map-get()
+iframe {
+    width: 65vw;
+    height: 60vh;
+    border: solid 5px;
+    border-color: map-get($map: $colors, $key: 'septenary') !important; //$septenary-color;
+    border-radius: 10%;
+    &:hover {
+      border-color: map-get($map: $colors, $key: 'nineth') !important; //$nineth-color;
+    }
+  }
+```
+# EXTEND
+
+A menudo, al diseñar una página una clase debe tener todos los estilos de
+otra clase, así como sus propios estilos específicos. En esos casos
+usamos @extend, para traer los estilos de otra clase.
+Por ejemplo, la metodología BEM fomenta las clases modificadoras que van en
+los mismos elementos que las clases de bloque o elemento. Pero esto puede
+crear HTML desordenado, es propenso a errores al olvidar incluir ambas
+clases, y puede traer problemas de estilo no semántico a su marcado.
+
+Ejemplos:
+```css
+// En el archivo _base.scss declaro una class donde en el archivo _components.scss doy estilos a la class .title mediante el extend.
+// Extends
+.titleStyles {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 50px;
+  margin: 20px 0;
+  text-align: center;
+  text-shadow: 0px 4px 4px $septenary-color;
+  &:hover {
+    color: $quaternary-color;
+  }
+}
+```
+_components
+```css
+// Estilos para todos los h1 del proyecto.
+.title {
+  @extend .titleStyles; // Font-size, color, background-color
+  letter-spacing: 5px;
+}
+```
+
+
 ## Demo del proyecto
 
 Haz clic aquí [TallerDeBicicletas](https://github.com/cesarlm05/TallerDeBicicletas.git).

@@ -1,4 +1,4 @@
-/* **************** */
+/* -------------- */
 /* Components */
 .area__encabezado {
   grid-area: area__encabezado;
@@ -37,7 +37,7 @@ header nav a {
     transition: 0.8s;
   }
 }
-/* **************** */
+/* ----------------- */
 /* Footer */
 .area__footer {
   grid-area: area__footer;
@@ -132,7 +132,7 @@ form fieldset {
 }
 .form__body {
   width: 400px;
-  height: 650px;
+  height: 685px;
   background-color: $senary-color;
   border: 1px solid $quinary-color;
   border-radius: 8px;
@@ -141,12 +141,15 @@ form fieldset {
   align-items: center;
   float: left;
   input {
-    font-size: 12px;
     width: 70%;
     margin-top: 5%;
     padding: 5%;
     &:hover {
-      @include fontStyles($septenary-color, $senary-color);
+      @include fontStyles(
+        12px,
+        $septenary-color,
+        $senary-color
+      ); // Font-size, color, background-color
       font-size: medium;
     }
   }
@@ -181,4 +184,8 @@ form fieldset {
 #consent {
   width: 10px;
   height: 10px;
+}
+.title {
+  @extend .titleStyles; // Font-size, color, background-color
+  letter-spacing: 5px;
 }

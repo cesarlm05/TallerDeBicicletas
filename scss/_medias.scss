@@ -1,4 +1,4 @@
-/* **************** */
+/* --- Medias & Animaciones --- */
 
 /* Animaciones animista.net */
 
@@ -176,6 +176,9 @@
 /* Responsive @Media */
 
 @media screen and (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
   .inner__title {
     font-size: 14px;
   }
@@ -193,9 +196,6 @@
     }
   }
   .about {
-    h1 {
-      font-size: 30px;
-    }
     h3 {
       font-size: 20px;
     }
@@ -204,9 +204,6 @@
     }
   }
   .contact__intro {
-    h1 {
-      font-size: 30px;
-    }
     p {
       font-size: 14px;
     }
@@ -216,7 +213,7 @@
   }
   .form__body {
     width: 380px;
-    height: 580px;
+    height: 680px;
   }
   #send {
     font-size: 16px;
@@ -227,15 +224,9 @@
     height: 7px;
   }
   .location {
-    h1 {
-      font-size: 25px;
-    }
     h4 {
       font-size: 16px;
     }
-  }
-  .service h1 {
-    font-size: 40px;
   }
   th {
     font-size: 12px;
@@ -259,6 +250,9 @@
   }
 }
 @media screen and (max-width: 640px) {
+  .title {
+    font-size: 30px;
+  }
   .inner__title {
     font-size: 13px;
   }
@@ -266,9 +260,6 @@
     font-size: 11px;
   }
   .about {
-    h1 {
-      font-size: 25px;
-    }
     h3 {
       font-size: 18px;
     }
@@ -277,9 +268,6 @@
     }
   }
   .contact__intro {
-    h1 {
-      font-size: 25px;
-    }
     p {
       font-size: 12px;
     }
@@ -289,7 +277,7 @@
   }
   .form__body {
     width: 360px;
-    height: 560px;
+    height: 650px;
   }
   #send {
     font-size: 12px;
@@ -300,15 +288,9 @@
     height: 5px;
   }
   .location {
-    h1 {
-      font-size: 20px;
-    }
     h4 {
       font-size: 12px;
     }
-  }
-  .service h1 {
-    font-size: 30px;
   }
   th {
     font-size: 10px;
@@ -329,7 +311,72 @@
     font-size: 8px;
   }
 }
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 25px;
+  }
+  .inner__title {
+    font-size: 12px;
+  }
+  .inner__subtitle {
+    font-size: 10px;
+  }
+  .about {
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+  .contact__intro {
+    p {
+      font-size: 10px;
+    }
+    a {
+      font-size: 10px;
+    }
+  }
+  .form__body {
+    width: 350px;
+    height: 630px;
+  }
+  #send {
+    font-size: 10px;
+  }
+  #consent {
+    font-size: 10px;
+    width: 5px;
+    height: 5px;
+  }
+  .location {
+    h4 {
+      font-size: 10px;
+    }
+  }
+  th {
+    font-size: 10px;
+  }
+  .precio {
+    font-size: 14px;
+  }
+  .build h4 {
+    font-size: 14px;
+  }
+  footer {
+    font-size: 8px;
+    a {
+      font-size: 8px;
+    }
+  }
+  .footer__into {
+    font-size: 8px;
+  }
+}
 @media screen and (max-width: 480px) and (orientation: landscape) {
+  .title {
+    font-size: 25px;
+  }
   .card {
     font-size: 8px;
   }

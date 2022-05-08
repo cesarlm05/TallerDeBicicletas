@@ -1,4 +1,4 @@
-/* **************** */
+/* --- Home --- */
 /* Index */
 .area__intro {
     grid-area: area__intro;
@@ -19,9 +19,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     h1 {
-        font-size: 50px;
         font-weight: bold;
-        text-align: center;
       }
       p {
         text-align: center;
@@ -52,7 +50,7 @@
       }
   }
     
-  /* **************** */
+  /* ---------------- */
   
   .area__cards {
     grid-area: area__cards;

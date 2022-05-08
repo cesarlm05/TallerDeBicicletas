@@ -1,4 +1,4 @@
-/* **************** */
+/* --- Nosotros --- */
 /* Aera About*/
 .area__about {
   grid-area: area__about;
@@ -22,12 +22,11 @@
   margin-top: 30px;
   h1 {
     display: flex;
-    font-size: 35px;
     font-weight: bold;
-    color: $primary-color;
-    background-color: $tertiary-color;
     padding: 10px;
+    margin-top: 50px;
     border-radius: 25px;
+    background-color: $tertiary-color;
   }
   h3 {
     display: flex;

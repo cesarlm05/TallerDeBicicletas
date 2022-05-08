@@ -1,9 +1,8 @@
-/* ************ */
-
+/* --- Servicios --- */
 .area__service {
   grid-area: area__service;
 }
-
+// En esta page hago uso de Maps para implementar varialbles que transpolan un color.
 /* service */
 /* Tabla */
 .service {
@@ -13,22 +12,20 @@
   justify-content: center;
   background: linear-gradient(
       to right,
-      $tertiary-color 100%,
-      $tertiary-color 100%
+      map-get($map: $colors, $key: 'tertiary') 100%,
+      map-get($map: $colors, $key: 'tertiary') 100%
     ),
     url("../img/un-taller.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: $primary-color;
+  color: map-get($map: $colors, $key: 'primary'); // $primary-color;
   text-align: center;
   padding-bottom: 30px;
   h1 {
-    font-size: 50px;
     font-weight: bold;
     padding: 10px;
-    border-radius: 25px;
     margin-top: 100px;
   }
 }
@@ -48,7 +45,7 @@
   display: table;
   border-collapse: separate;
   border-spacing: 2px;
-  border-color: $octonary-color;
+  border-color: map-get($map: $colors, $key: 'octonary'); // $octonary-color;
 }
 .price {
   font-size: 16px;
@@ -72,8 +69,8 @@
   height: 70vh;
   background: linear-gradient(
       to right,
-      $tertiary-color 100%,
-      $tertiary-color 100%
+      map-get($map: $colors, $key: 'tertiary') 100%,
+      map-get($map: $colors, $key: 'tertiary') 100%
     ),
     url("../img/taller.png");
   background-size: cover;
@@ -85,10 +82,10 @@
     font-size: 25px;
     font-weight: bold;
     padding: 10px;
-    color: $primary-color;
+    color: map-get($map: $colors, $key: 'primary'); // $primary-color;
   }
   p {
-    color: $primary-color;
+    color: map-get($map: $colors, $key: 'primary'); // $primary-color;
     font-size: 15px;
     font-weight: bold;
     padding: 15px;
@@ -98,10 +95,10 @@
     width: 65vw;
     height: 60vh;
     border: solid 5px;
-    border-color: $septenary-color !important;
+    border-color: map-get($map: $colors, $key: 'septenary') !important; //$septenary-color;
     border-radius: 10%;
     &:hover {
-      border-color: $nineth-color !important;
+      border-color: map-get($map: $colors, $key: 'nineth') !important; //$nineth-color;
     }
   }
 }

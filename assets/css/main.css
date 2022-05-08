@@ -1,22 +1,30 @@
 @charset "UTF-8";
-/* *** Imports *** */
+/* --- Bases - Imports - Variables - Maps - Mixins --- */
 /* Fuentes */
 @import url("/assets/fonts/Hack/Hack Regular Nerd Font Complete.ttf");
 /*font-face {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat Alternates', sans-serif;
 }*/
-/* Variables */
-/* Mixins */
+.titleStyles, .title {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 50px;
+  margin: 20px 0;
+  text-align: center;
+  text-shadow: 0px 4px 4px black; }
+  .titleStyles:hover, .title:hover {
+    color: #df4759; }
+
 /* EStilos generales del proyecto */
 body {
-  font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
+  font-size: 12px;
   color: #fff;
-  background-color: #333; }
+  background-color: #333;
+  /* Fuente y color de texto */ }
 
-/* Layouts */
+/* --- Layouts --- */
 /* Grid para Index */
 .container__index {
   height: 100vh;
@@ -47,7 +55,7 @@ body {
   display: grid;
   grid-template-areas: "area__encabezado" "area__service" "area__build" "area__footer"; }
 
-/* **************** */
+/* -------------- */
 /* Components */
 .area__encabezado {
   grid-area: area__encabezado; }
@@ -80,7 +88,7 @@ header nav a {
     transform: translateX(5px);
     transition: 0.8s; }
 
-/* **************** */
+/* ----------------- */
 /* Footer */
 .area__footer {
   grid-area: area__footer;
@@ -155,7 +163,7 @@ form fieldset {
 
 .form__body {
   width: 400px;
-  height: 650px;
+  height: 685px;
   background-color: rgba(126, 126, 126, 0.6);
   border: 1px solid #c20000;
   border-radius: 8px;
@@ -164,11 +172,11 @@ form fieldset {
   align-items: center;
   float: left; }
   .form__body input {
-    font-size: 12px;
     width: 70%;
     margin-top: 5%;
     padding: 5%; }
     .form__body input:hover {
+      font-size: 12px;
       color: black;
       background-color: rgba(126, 126, 126, 0.6);
       font-size: medium; }
@@ -201,7 +209,10 @@ form fieldset {
   width: 10px;
   height: 10px; }
 
-/* **************** */
+.title {
+  letter-spacing: 5px; }
+
+/* --- Home --- */
 /* Index */
 .area__intro {
   grid-area: area__intro; }
@@ -221,9 +232,7 @@ form fieldset {
   background-repeat: no-repeat;
   background-attachment: fixed; }
   .intro h1 {
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center; }
+    font-weight: bold; }
   .intro p {
     text-align: center;
     font-size: 20px;
@@ -248,7 +257,7 @@ form fieldset {
     background-color: #333;
     padding: 10px; }
 
-/* **************** */
+/* ---------------- */
 .area__cards {
   grid-area: area__cards; }
 
@@ -336,7 +345,7 @@ form fieldset {
 .inner__service:hover {
   color: #c20000; }
 
-/* **************** */
+/* --- Nosotros --- */
 /* Aera About*/
 .area__about {
   grid-area: area__about; }
@@ -357,12 +366,11 @@ form fieldset {
   margin-top: 30px; }
   .about h1 {
     display: flex;
-    font-size: 35px;
     font-weight: bold;
-    color: #fff;
-    background-color: rgba(51, 51, 51, 0.65);
     padding: 10px;
-    border-radius: 25px; }
+    margin-top: 50px;
+    border-radius: 25px;
+    background-color: rgba(51, 51, 51, 0.65); }
   .about h3 {
     display: flex;
     font-size: 20px;
@@ -378,7 +386,7 @@ form fieldset {
     font-weight: bold;
     padding: 25px; }
 
-/* **************** */
+/* --- Contact --- */
 /* Area Contacto*/
 .area__contact__section {
   grid-area: area__contact; }
@@ -406,15 +414,12 @@ form fieldset {
   justify-content: center;
   text-align: center; }
   .contact__intro h1 {
-    font-size: 40px;
     font-weight: bold;
-    padding: 10px;
-    border-radius: 25px; }
+    padding: 10px; }
   .contact__intro p {
     font-size: 16px;
     font-weight: bold;
-    padding: 10px;
-    border-radius: 25px; }
+    padding: 10px; }
   .contact__intro a {
     font-size: 16px;
     font-weight: bold;
@@ -438,7 +443,7 @@ form fieldset {
   margin: 50px 0px 50px 0px;
   color: #fff; }
 
-/* ************ */
+/* --- Servicios --- */
 .area__service {
   grid-area: area__service; }
 
@@ -458,10 +463,8 @@ form fieldset {
   text-align: center;
   padding-bottom: 30px; }
   .service h1 {
-    font-size: 50px;
     font-weight: bold;
     padding: 10px;
-    border-radius: 25px;
     margin-top: 100px; }
 
 .table-responsive {
@@ -525,7 +528,7 @@ form fieldset {
     .build iframe:hover {
       border-color: red !important; }
 
-/* **************** */
+/* --- Sucursal --- */
 /* Area location */
 .area__location {
   grid-area: area__location; }
@@ -544,10 +547,8 @@ form fieldset {
   text-align: center;
   margin-top: 45px; }
   .location h1 {
-    font-size: 30px;
     font-weight: bold;
-    margin: 15px;
-    border-radius: 25px; }
+    margin: 50px 0 10px 0; }
   .location h4 {
     font-size: 20px;
     font-weight: bold;
@@ -583,7 +584,7 @@ form fieldset {
   margin: 15px;
   padding: 10px; }
 
-/* **************** */
+/* --- Medias & Animaciones --- */
 /* Animaciones animista.net */
 .rotate-scale-up {
   -webkit-animation: rotate-scale-up 0.65s linear both;
@@ -725,6 +726,8 @@ form fieldset {
 
 /* Responsive @Media */
 @media screen and (max-width: 768px) {
+  .title {
+    font-size: 40px; }
   .inner__title {
     font-size: 14px; }
   .inner__subtitle {
@@ -736,33 +739,25 @@ form fieldset {
     font-size: 10px; }
     .menu__items li a {
       font-size: 10px; }
-  .about h1 {
-    font-size: 30px; }
   .about h3 {
     font-size: 20px; }
   .about p {
     font-size: 14px; }
-  .contact__intro h1 {
-    font-size: 30px; }
   .contact__intro p {
     font-size: 14px; }
   .contact__intro a {
     font-size: 14px; }
   .form__body {
     width: 380px;
-    height: 580px; }
+    height: 680px; }
   #send {
     font-size: 16px; }
   #consent {
     font-size: 16px;
     width: 7px;
     height: 7px; }
-  .location h1 {
-    font-size: 25px; }
   .location h4 {
     font-size: 16px; }
-  .service h1 {
-    font-size: 40px; }
   th {
     font-size: 12px; }
   .precio {
@@ -778,37 +773,31 @@ form fieldset {
       width: 150px; } }
 
 @media screen and (max-width: 640px) {
+  .title {
+    font-size: 30px; }
   .inner__title {
     font-size: 13px; }
   .inner__subtitle {
     font-size: 11px; }
-  .about h1 {
-    font-size: 25px; }
   .about h3 {
     font-size: 18px; }
   .about p {
     font-size: 12px; }
-  .contact__intro h1 {
-    font-size: 25px; }
   .contact__intro p {
     font-size: 12px; }
   .contact__intro a {
     font-size: 12px; }
   .form__body {
     width: 360px;
-    height: 560px; }
+    height: 650px; }
   #send {
     font-size: 12px; }
   #consent {
     font-size: 12px;
     width: 5px;
     height: 5px; }
-  .location h1 {
-    font-size: 20px; }
   .location h4 {
     font-size: 12px; }
-  .service h1 {
-    font-size: 30px; }
   th {
     font-size: 10px; }
   .precio {
@@ -822,7 +811,48 @@ form fieldset {
   .footer__into {
     font-size: 8px; } }
 
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 25px; }
+  .inner__title {
+    font-size: 12px; }
+  .inner__subtitle {
+    font-size: 10px; }
+  .about h3 {
+    font-size: 16px; }
+  .about p {
+    font-size: 10px; }
+  .contact__intro p {
+    font-size: 10px; }
+  .contact__intro a {
+    font-size: 10px; }
+  .form__body {
+    width: 350px;
+    height: 630px; }
+  #send {
+    font-size: 10px; }
+  #consent {
+    font-size: 10px;
+    width: 5px;
+    height: 5px; }
+  .location h4 {
+    font-size: 10px; }
+  th {
+    font-size: 10px; }
+  .precio {
+    font-size: 14px; }
+  .build h4 {
+    font-size: 14px; }
+  footer {
+    font-size: 8px; }
+    footer a {
+      font-size: 8px; }
+  .footer__into {
+    font-size: 8px; } }
+
 @media screen and (max-width: 480px) and (orientation: landscape) {
+  .title {
+    font-size: 25px; }
   .card {
     font-size: 8px; }
   .menu__items li a {
