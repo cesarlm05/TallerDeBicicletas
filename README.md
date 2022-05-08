@@ -268,7 +268,52 @@ _components
   letter-spacing: 5px;
 }
 ```
+# MIXINS
 
+Te permiten definir estilos que pueden ser reutilizados en tu proyecto.
+Una de las mayores diferencias con los Extend, es que los Mixins
+pueden recibir argumentos, los cuales nos permitirán producir una gran
+variedad de estilos con unas simples líneas.
+
+Ejemplos:
+```css
+// Mixins en el archivo _base.scss declaro una @mixin
+@mixin fontStyles($fontsize, $color1, $color2) {
+  font-size: $fontsize;
+  color: $color1;
+  background-color: $color2;
+}
+```
+
+Doy uso al minxin en main.scss y en _components.scss para estilizar los forms
+```css
+/* main.scss - EStilos generales del proyecto */
+body {
+  font-weight: 400;
+  line-height: 1.5;
+  @include fontStyles(
+    12px,
+    $primary-color,
+    $secondary-color
+  ); /* Fuente y color de texto */
+}
+```
+```css
+/* _components.scss - EStilos de los forms */
+input {
+    width: 70%;
+    margin-top: 5%;
+    padding: 5%;
+    &:hover {
+      @include fontStyles(
+        12px,
+        $septenary-color,
+        $senary-color
+      ); // Font-size, color, background-color
+      font-size: medium;
+    }
+  }
+```
 
 ## Demo del proyecto
 
@@ -337,4 +382,5 @@ Ofrecemos a nuestros clientes soluciones ideales para resolver problemas simples
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-Todos los derechos reservados &copy; 2021 - Developed by César L. Medina
+Todos los derechos reservados &copy; 2021 - Developed by César L. Medina.
+@cesarlm05
