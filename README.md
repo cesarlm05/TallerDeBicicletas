@@ -1,4 +1,4 @@
-<h1> [OJO CLINICO BIKE](https://cesarlm05.github.io/TallerDeBicicletas/) </h1>
+# [OJO CLINICO BIKE](https://cesarlm05.github.io/TallerDeBicicletas/)
 
 # Taller de bicicletas
 
