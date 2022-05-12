@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tus consultas son valiosas para nosotros">
+    <meta name="description" content="Trabajamos con responsabiliada por lo que ofrecemos servicios con garantía!">
     <meta name="author" content="Cesar L. Medina">
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/img/favicon.png">
@@ -16,11 +16,11 @@
     <!--  Icons  -->
     <script src="https://kit.fontawesome.com/12f69a35de.js" crossorigin="anonymous"></script>
     <!--- Title -->
-    <title>Contáctanos</title>
+    <title>Servicios</title>
 </head>
 
 <body>
-    <div class="container-fluid container__contact">
+    <div class="container-fluid container__service">
         <!-- Grid -->
         <section class="area__encabezado">
             <header>
@@ -61,26 +61,78 @@
             </header>
         </section>
 
-        <section class="row area__contact__section">
-            <div class="contact__intro">
-                <h1 class="title">Contacto</h1>
-                <p>Por cualquier duda o comentario que quieras dejarnos contactanos aquí!.</p>
-                <a class="btn btn-danger rotate-scale-up" href="./location.html">Nuestra ubicación</a>
-                <!-- Enlace a la pagina de ubicacion con estilos de Bootstrap -->
-            </div>
-            <!-- Estoy usando la Pseudoclase :hover para el form -->
-            <div class="container__form">
+        <div class="row area__service">
+            <section class="service">
+                <!-- Animaciones en h1 y table 'animista.net'   -->
+                <span class="rotate-vert-center">
+                    <h1 class="title">Servicios</h1>
+                </span>
+                <!-- Tabla -->
+                <!-- Tabla con los servicios Bootstrap -->
+                <div class="table-responsive rotate-vert-center">
+                    <table class="table table-dark table-hover align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col">Opción</th>
+                                <th scope="col">Servicio</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Service básico</td>
+                                <td>Lavado completo.
+                                    Limpieza de transmisión.
+                                    Ajuste y puesta a punto de cambios.
+                                    Control y revisión de frenos.</td>
+                                <td class="price">$2000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Service Pro</td>
+                                <td>Lavado completo.
+                                    Limpieza de transmisión.
+                                    Desarme completo.
+                                    Revisión de todos los componentes.
+                                    Limpieza y engrase de todas las partes móviles.
+                                    Ajuste y puesta a punto de cambios.
+                                    Control y revisión de frenos.</td>
+                                <td class="price">$3000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Service Enterprise</td>
+                                <td>Lavado completo.
+                                    Limpieza de transmisión.
+                                    Desarme completo.
+                                    Revisión de todos los componentes.
+                                    Limpieza y engrase de todas las partes móviles.
+                                    Ajuste y puesta a punto de cambios.
+                                    Control y revisión de frenos.
+                                    Purgado de frenos.
+                                    Centrado de ruedas.</td>
+                                <td class="price">$5000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <div class="form">
+                    <!-- Estoy usando la Pseudoclase :hover para el form -->
                     <form class="form__body" action="../index.html" method="post">
                         <fieldset>
+                            <!-- Se me complicó el diseño del fielset -->
                             <legend>
                                 <h2>Solicitud de servicio</h2>
                                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                                 <input type="text" name="apellido" id="apellido" placeholder="Apellido">
                                 <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
-                                <select name="form__option" id="form__option" aria-placeholder="Servicio" required>
-                                    <option value="yes">Soy socio/a</option>
-                                    <option value="no">No soy socio/a</option>
+                                <select name="service__option" id="service__option" aria-placeholder="Servicio"
+                                    required>
+                                    <option value="basic">Service básico</option>
+                                    <option value="pro">Service Pro</option>
+                                    <option value="entreprise">Service Enterprise</option>
                                 </select>
                                 <textarea id="txt" form="contacto" name="textarea" rows="3" cols="30"
                                     placeholder="Mensaje"></textarea>
@@ -95,8 +147,20 @@
                         </fieldset>
                     </form>
                 </div>
-            </div>
-        </section>
+
+            </section>
+        </div>
+        <div class="row area__build">
+            <section class="build" id="build">
+                <div class="ifrem">
+                    <!-- Estoy usando la Pseudoclase :hover para el iframe -->
+                    <h4>También hacemos servicio de armado a pedido.</h4>
+                    <iframe src="https://www.youtube.com/embed/7R2y_ESKy88" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
         <!-- Footer aplico background de Bootstrap -->
         <footer class="row area__footer bg-danger">
             <div class="footer__item">
@@ -113,6 +177,7 @@
                         bici.
                     </p>
                     <p><i class="fa-solid fa-location-arrow"></i><a href="./location.html">SUCURSAL</a></p>
+                    <p><i class="fa-solid fa-mobile-screen"></i><a href="./contact.html">CONTACTO</a></p>
                 </div>
                 <div class="social">
                     <h2>SIGUENOS</h2>
