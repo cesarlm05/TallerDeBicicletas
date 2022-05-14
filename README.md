@@ -1,6 +1,6 @@
 # [OJO CLINICO BIKE](https://cesarlm05.github.io/TallerDeBicicletas/)
 
-# Taller de bicicletas
+## Taller de bicicletas
 
 ### Proyecto de mi primera Web para Coderhouse.
 
@@ -382,11 +382,10 @@ header nav a {
 
 Ofrecemos a nuestros clientes soluciones ideales para resolver problemas simples o complejos que pueda presentar su bici, nuestro objetivo es brindar siempre el mejor servicio.
 
-## License
+
+## WEBSITE: [OJO CLINICO BIKE](https://cesarlm05.github.io/TallerDeBicicletas/)
+
+
+### _License:_
 [MIT](https://choosealicense.com/licenses/mit/)
 Todos los derechos reservados &copy; 2021 - Developed by César L. Medina.
-@cesarlm05
-
-
-## WEBSITE:
-[OJO CLINICO BIKE](https://cesarlm05.github.io/TallerDeBicicletas/)
