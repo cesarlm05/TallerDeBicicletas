@@ -237,8 +237,8 @@ form fieldset {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    padding: 25px;
-    margin: 15px; }
+    padding: 5px;
+    margin: 5px; }
   .intro a {
     text-decoration: none;
     color: #fff; }
@@ -368,7 +368,7 @@ form fieldset {
     display: flex;
     font-weight: bold;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 65px;
     border-radius: 25px;
     background-color: rgba(51, 51, 51, 0.65); }
   .about h3 {
@@ -384,7 +384,7 @@ form fieldset {
     color: #fff;
     font-size: 16px;
     font-weight: bold;
-    padding: 25px; }
+    padding: 10px; }
 
 /* --- Contact --- */
 /* Area Contacto*/
@@ -728,6 +728,8 @@ form fieldset {
 @media screen and (max-width: 768px) {
   .title {
     font-size: 40px; }
+  .intro p {
+    font-size: 16px; }
   .inner__title {
     font-size: 14px; }
   .inner__subtitle {
@@ -775,6 +777,8 @@ form fieldset {
 @media screen and (max-width: 640px) {
   .title {
     font-size: 30px; }
+  .intro p {
+    font-size: 12px; }
   .inner__title {
     font-size: 13px; }
   .inner__subtitle {

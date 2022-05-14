@@ -179,6 +179,11 @@
   .title {
     font-size: 40px;
   }
+  .intro {
+    p {
+      font-size: 16px;
+    }
+  }
   .inner__title {
     font-size: 14px;
   }
@@ -252,6 +257,11 @@
 @media screen and (max-width: 640px) {
   .title {
     font-size: 30px;
+  }
+  .intro {
+    p {
+      font-size: 12px;
+    }
   }
   .inner__title {
     font-size: 13px;
