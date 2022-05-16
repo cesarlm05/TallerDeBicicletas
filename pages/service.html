@@ -120,7 +120,7 @@
                 </div>
                 <div class="form">
                     <!-- Estoy usando la Pseudoclase :hover para el form -->
-                    <form class="form__body" action="../index.html" method="post">
+                    <form class="form__body" action="../assets/php/form.php" method="post">
                         <fieldset>
                             <!-- Se me complicó el diseño del fielset -->
                             <legend>
@@ -128,13 +128,13 @@
                                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                                 <input type="text" name="apellido" id="apellido" placeholder="Apellido">
                                 <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
-                                <select name="service__option" id="service__option" aria-placeholder="Servicio"
+                                <select name="form__option" id="form__option" aria-placeholder="Servicio"
                                     required>
                                     <option value="basic">Service básico</option>
                                     <option value="pro">Service Pro</option>
                                     <option value="entreprise">Service Enterprise</option>
                                 </select>
-                                <textarea id="txt" form="contacto" name="textarea" rows="3" cols="30"
+                                <textarea id="txt" form="contacto" name="textbody" rows="3" cols="30"
                                     placeholder="Mensaje"></textarea>
                                 <input id="send" type="submit" value="Enviar">
                                 <div class="consent">
@@ -184,7 +184,8 @@
                     <!-- Iconos desde CDN fontawesome -->
                     <div class="red-social">
                         <a href="https://www.facebook.com/ojoclinicobike" class="fa fa-facebook" target="_blank"></a>
-                        <a href="https://www.instagram.com/ojo_clinico_bike/" class="fa fa-instagram" target="_blank"></a>
+                        <a href="https://www.instagram.com/ojo_clinico_bike/" class="fa fa-instagram"
+                            target="_blank"></a>
                         <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
                         <a href="service.html#build" class="fa fa-youtube"></a>
                     </div>
