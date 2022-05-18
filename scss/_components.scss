@@ -5,36 +5,44 @@
 }
 /* Menú */
 /* Retocando estilos de Bootstrap */
-header nav a {
-  padding: 1rem;
-  font: {
-    size: 1rem;
-    weight: 700;
+header nav {
+  figure {
+    display: flex;
+    justify-content: left;
+    img {
+      width: 120px;
+      border-radius: 50%;
+    }
+    &:hover {
+      background-color: $tertiary-color;
+      padding: 15px;
+      border-radius: 50%;
+      transform: scale(1.5);
+      transform: translateX(15px);
+      text-transform: uppercase;
+      transition: 0.8s;
+    }
   }
-  transition: 0.5s;
-  text: {
-    align: center;
-    decoration: none;
-  } // Aquí nextee las propiedades de texto
-  &:hover {
-    background-color: $tertiary-color;
-    padding: 15px;
-    border-radius: 25px;
-    transform: scale(1.1);
-    transform: translateX(5px);
-    text-transform: uppercase;
-    transition: 0.8s;
-  }
-}
-.dropdown-menu {
-  text-align: center;
-  a:hover {
-    background-color: $tertiary-color;
-    padding: 15px;
-    border-radius: 25px;
-    transform: scale(1.1);
-    transform: translateX(5px);
-    transition: 0.8s;
+  .nav-link {
+    padding: 1rem;
+    font: {
+      size: 1rem;
+      weight: 600;
+    }
+    transition: 0.5s;
+    text: {
+      align: center;
+      decoration: none;
+    } // Aquí nextee las propiedades de texto
+    &:hover {
+      background-color: $tertiary-color;
+      padding: 15px;
+      border-radius: 25px;
+      transform: scale(1.1);
+      transform: translateX(5px);
+      text-transform: uppercase;
+      transition: 0.8s;
+    }
   }
 }
 /* ----------------- */
@@ -73,13 +81,14 @@ header nav a {
     .social h2 {
       color: $primary-color;
       margin-bottom: 25px;
-      font-size: 20px;
+      font-size: 22px;
     }
     .social p {
+      font-size: medium;
       color: $primary-color;
       margin-bottom: 10px;
       a {
-        font-size: 16px;
+        font-size: 20px;
         color: $primary-color;
         text-decoration: none;
         transition: 0.5s;

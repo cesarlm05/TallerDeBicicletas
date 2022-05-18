@@ -6,6 +6,7 @@
 /* service */
 /* Tabla */
 .service {
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +47,12 @@
   border-collapse: separate;
   border-spacing: 2px;
   border-color: map-get($map: $colors, $key: 'octonary'); // $octonary-color;
+  td {
+    font-size: medium;
+    padding: 15px;
+    text-align: justify;
+    background-color: map-get($map: $colors, $key: 'tertiary'); // $tertiary-color;
+  }
 }
 .price {
   font-size: 16px;
@@ -86,7 +93,7 @@
   }
   p {
     color: map-get($map: $colors, $key: 'primary'); // $primary-color;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     padding: 15px;
     margin: 15px;

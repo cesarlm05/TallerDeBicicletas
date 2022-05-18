@@ -23,10 +23,18 @@
     <div class="container-fluid container__location">
         <!-- Grid -->
         <section class="area__encabezado">
+            <!-- row (Estoy usando una sola column en todo el proyecto) -->
             <header>
                 <nav class="navbar fixed-top navbar-light bg-danger">
+                    <!-- navbar (Estoy usando la clase de Bootstrap para crear una barra de navegación) -->
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="../index.html">OJO CLINICO BIKE</a>
+                        <figure>
+                            <a href="../index.html">
+                                <img class="logo__header" aria-current="page" src="../assets/img/logo.png"
+                                    alt="OJO CLINICO BIKE">
+                            </a>
+                        </figure>
+                        <!-- navbar-brand (Estoy usando la clase de Bootstrap para crear una marca) -->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -35,24 +43,16 @@
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                    <a class="nav-link" aria-current="page" href="service.html">Servicios</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="service.html">service</a>
+                                    <a class="nav-link" aria-current="page" href="about.html">Nosotros</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
+                                    <a class="nav-link" aria-current="page" href="location.html">Sucursal</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Contact
-                                    </a>
-                                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                                        <!-- dropdown-menu (Estoy usando la clase de Bootstrap para crear una lista desplegable) -->
-                                        <li><a class="dropdown-item text-danger" href="location.html">Location</a></li>
-                                        <li><a class="dropdown-item text-danger" href="contact.html">Contact</a></li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="contact.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -84,7 +84,8 @@
                 <div class="guia">
                     <h4>Como llegar</h4>
                     <p>Plus Code: 9GXW+MQ Buenos Aires</p>
-                    <p>Para llegar a la sucursal, tomar como referencia la intersección de Av. Juan B. Justo y Av. Dr. Honorio Pueyrredón.</p>
+                    <p>Para llegar a la sucursal, tomar como referencia la intersección de Av. Juan B. Justo y Av. Dr.
+                        Honorio Pueyrredón.</p>
                 </div>
             </section>
         </div>
@@ -110,7 +111,8 @@
                     <!-- Iconos desde CDN fontawesome -->
                     <div class="red-social">
                         <a href="https://www.facebook.com/ojoclinicobike" class="fa fa-facebook" target="_blank"></a>
-                        <a href="https://www.instagram.com/ojo_clinico_bike/" class="fa fa-instagram" target="_blank"></a>
+                        <a href="https://www.instagram.com/ojo_clinico_bike/" class="fa fa-instagram"
+                            target="_blank"></a>
                         <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
                         <a href="service.html#build" class="fa fa-youtube"></a>
                     </div>

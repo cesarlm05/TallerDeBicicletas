@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="taller de Bicicletas, nos dedicamos a la reparación general de bicis brindado un servicio de excelencia">
+    <meta name="description"
+        content="taller de Bicicletas, nos dedicamos a la reparación general de bicis brindado un servicio de excelencia">
     <meta name="keywords" content="bicicleta, bici, taller de bicis, taller de bicicletas, taller">
     <meta name="author" content="Cesar L. Medina">
     <!-- Favicon -->
@@ -30,7 +31,12 @@
                 <nav class="navbar fixed-top navbar-light bg-danger">
                     <!-- navbar (Estoy usando la clase de Bootstrap para crear una barra de navegación) -->
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">OJO CLINICO BIKE</a>
+                        <figure>
+                            <a href="index.html">
+                                <img class="logo__header" aria-current="page" src="./assets/img/logo.png"
+                                    alt="OJO CLINICO BIKE">
+                            </a>
+                        </figure>
                         <!-- navbar-brand (Estoy usando la clase de Bootstrap para crear una marca) -->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -40,27 +46,16 @@
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link" aria-current="page" href="./pages/service.html">Servicios</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./pages/service.html">service</a>
+                                    <a class="nav-link" aria-current="page" href="./pages/about.html">Nosotros</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./pages/about.html">About</a>
+                                    <a class="nav-link" aria-current="page" href="./pages/location.html">Sucursal</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Contact
-                                    </a>
-                                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                                        <!-- dropdown-menu (Estoy usando la clase de Bootstrap para crear una lista desplegable) -->
-                                        <li><a class="dropdown-item text-danger"
-                                                href="./pages/location.html">Location</a>
-                                        </li>
-                                        <li><a class="dropdown-item text-danger" href="./pages/contact.html">Contact</a>
-                                        </li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./pages/contact.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -72,10 +67,14 @@
         <section class="row area__intro">
             <div class="intro">
                 <h1 class="rotate-scale-up title">🛠️ TALLER DE BICICLETAS</h1>
-                <p>Ofrecemos a nuestros clientes soluciones ideales para resolver problemas simples o complejos que pueda
+                <p>Ofrecemos a nuestros clientes soluciones ideales para resolver problemas simples o complejos que
+                    pueda
                     presentar su bici, nuestro obetivo es brindar siempre el mejor servicio.</p>
-                    <p>Las bicicletas son equipos mecánicos que necesitan cuidado, mantenimiento y ajustes periódicos.</p>
-                    <p>Acercate con tu bici a nuestro taller de reparaciones para hacer una evaluación y diagnóstico de sus necesidades actuales. Es recomendable que al menos una vez cada 6 meses se hagan controles, limpieza, lubricación y ajustes que le darán a tu bici una vida útil mucho más prolongada y a vos la tranquilidad de andar en ella de un modo seguro.</p>
+                <p>Las bicicletas son equipos mecánicos que necesitan cuidado, mantenimiento y ajustes periódicos.</p>
+                <p>Acercate con tu bici a nuestro taller de reparaciones para hacer una evaluación y diagnóstico de sus
+                    necesidades actuales. Es recomendable que al menos una vez cada 6 meses se hagan controles,
+                    limpieza, lubricación y ajustes que le darán a tu bici una vida útil mucho más prolongada y a vos la
+                    tranquilidad de andar en ella de un modo seguro.</p>
                 <!-- Boton de Navegación con animación animista.net -->
                 <button type="button" class="rotate-vert-center btn btn-danger"><a
                         href="./pages/service.html">Servicios</a></button>
@@ -204,7 +203,8 @@
                     <!-- Iconos desde CDN fontawesome -->
                     <div class="red-social">
                         <a href="https://www.facebook.com/ojoclinicobike" class="fa fa-facebook" target="_blank"></a>
-                        <a href="https://www.instagram.com/ojo_clinico_bike/" class="fa fa-instagram" target="_blank"></a>
+                        <a href="https://www.instagram.com/ojo_clinico_bike/" class="fa fa-instagram"
+                            target="_blank"></a>
                         <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
                         <a href="./pages/service.html#build" class="fa fa-youtube"></a>
                     </div>
