@@ -5,16 +5,32 @@
 }
 /* Menú */
 /* Retocando estilos de Bootstrap */
+.navbar {
+  width: 100%;
+  border-bottom: 5px solid $quaternary-color;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 0;
+  z-index: 1030;
+  transform: translateY(-30px);
+  transition: 4.8s;
+  img {
+    margin-top: 35px;
+    transform: scale(1.2);
+    transition: 4.8s;
+  }
+}
 header nav {
   figure {
     display: flex;
     justify-content: left;
+    margin-top: 5px;
     img {
-      width: 120px;
+      width: 100px;
       border-radius: 50%;
     }
     &:hover {
-      background-color: $tertiary-color;
+      *background-color: $tertiary-color;
       padding: 15px;
       border-radius: 50%;
       transform: scale(1.5);
@@ -24,9 +40,9 @@ header nav {
     }
   }
   .nav-link {
-    padding: 1rem;
+    padding: 16px;
     font: {
-      size: 1rem;
+      size: 16px;
       weight: 600;
     }
     transition: 0.5s;

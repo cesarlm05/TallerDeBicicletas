@@ -59,27 +59,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
-Tenga en cuenta que divide las tags en grupos que deben recibir valores genéricos, 
-como margin: 0, border: 0, padding: 0 y otras que necesitan valores más específicos, como:
-*/
-ol,
-ul {
-  list-style: none;
-}
-/*
-Donde toma el estilo de tag predeterminado que usa círculos para resaltar elementos de lista desordenados.
-También hay formas simplificadas que como el uso de selectores universales:
-*/
-*,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-body {
-  font-size: 100%;
-  list-style-type: none;
-}
