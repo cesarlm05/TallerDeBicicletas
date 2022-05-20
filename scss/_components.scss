@@ -211,6 +211,20 @@ form fieldset {
   width: 10px;
   height: 10px;
 }
+.card {
+  background-color: $senary-color;
+  border: 1px solid $quinary-color;
+  border-radius: 8px;
+  padding: 20px 9px 0px 9px;
+  text-align: center;
+  align-items: center;
+  &:hover {
+    box-shadow: 0px 0px 25px $tertiary-color;
+    transition: all 1s;
+    border-radius: 15px;
+    background-color: $secondary-color;
+  }
+}
 .title {
   @extend .titleStyles; // Font-size, color, background-color
   letter-spacing: 5px;
