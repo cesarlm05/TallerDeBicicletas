@@ -71,14 +71,13 @@ $colors: (
 }
 
 .button1Styles {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: medium;
   color: $septenary-color;
   background-color: $quaternary-color;
   text-transform: uppercase;
   border-radius: 25px;
   padding: 5px;
-  margin-top: 10px;
   &:hover {
       color: $primary-color;
       background-color: $octonary-color;
