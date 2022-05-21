@@ -191,6 +191,18 @@ form fieldset {
     margin-top: 5%;
     padding: 5%;
   }
+  .consent {
+    margin-top: 5px;
+    font-size: 14px;
+    &:hover {
+      color: $nineth-color;
+    }
+  .consent_check {
+    margin: 10px;
+    width: 15px !important;
+    height: 15px !important;
+   }
+  }
   &:hover {
     box-shadow: 0px 0px 25px $tertiary-color;
     transition: all 1s;
