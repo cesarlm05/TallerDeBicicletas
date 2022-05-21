@@ -44,3 +44,60 @@ $colors: (
     color: $quaternary-color;
   }
 }
+.subtitleStyles {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+  text-shadow: 0px 4px 4px $septenary-color;
+  &:hover {
+    color: $quaternary-color;
+  }
+}
+
+
+.buttonStyles {
+  font-size: 20px;
+  font-weight: bold;
+  color: $primary-color;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 20px;
+  &:hover {
+      color: $quinary-color;
+      background-color: $secondary-color;
+      padding: 10px;
+    }
+}
+
+.button1Styles {
+  font-size: 18px;
+  font-weight: bold;
+  color: $septenary-color;
+  background-color: $quaternary-color;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 5px;
+  margin-top: 10px;
+  &:hover {
+      color: $primary-color;
+      background-color: $octonary-color;
+      padding: 7px;
+    }
+}
+
+.button2Styles {
+  font-size: 16px;
+  font-weight: medium;
+  color: $primary-color;
+  background-color: $quaternary-color;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 3px;
+  &:hover {
+      color: $primary-color;
+      background-color: $octonary-color;
+      padding: 7px;
+    }
+}

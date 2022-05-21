@@ -76,6 +76,55 @@ table {
   .titleStyles:hover, .title:hover {
     color: #df4759; }
 
+.subtitleStyles, .subtitle {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+  text-shadow: 0px 4px 4px black; }
+  .subtitleStyles:hover, .subtitle:hover {
+    color: #df4759; }
+
+.buttonStyles, .button {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 20px; }
+  .buttonStyles:hover, .button:hover {
+    color: #c20000;
+    background-color: #333;
+    padding: 10px; }
+
+.button1Styles, .button1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background-color: #df4759;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 5px;
+  margin-top: 10px; }
+  .button1Styles:hover, .button1:hover {
+    color: #fff;
+    background-color: grey;
+    padding: 7px; }
+
+.button2Styles, .button2 {
+  font-size: 16px;
+  font-weight: medium;
+  color: #fff;
+  background-color: #df4759;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 3px; }
+  .button2Styles:hover, .button2:hover {
+    color: #fff;
+    background-color: grey;
+    padding: 7px; }
+
 /* EStilos generales del proyecto */
 body {
   font-weight: 400;
@@ -292,13 +341,21 @@ form fieldset {
   width: 10px;
   height: 10px; }
 
+/* Card de Servicos con precios - page service.html */
 .card {
   background-color: rgba(126, 126, 126, 0.6);
   border: 1px solid #c20000;
   border-radius: 8px;
   padding: 20px 9px 0px 9px;
-  text-align: center;
-  align-items: center; }
+  text-align: left;
+  align-items: left; }
+  .card .card__title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5px; }
+  .card li {
+    font-size: 16px;
+    color: #fff; }
   .card:hover {
     box-shadow: 0px 0px 25px rgba(51, 51, 51, 0.65);
     transition: all 1s;
@@ -307,6 +364,18 @@ form fieldset {
 
 .title {
   letter-spacing: 5px; }
+
+.subtitle {
+  letter-spacing: 3px; }
+
+.button {
+  letter-spacing: 3px; }
+
+.button1 {
+  letter-spacing: 3px; }
+
+.button2 {
+  letter-spacing: 2px; }
 
 /* --- Home --- */
 /* Index */
@@ -341,20 +410,6 @@ form fieldset {
     text-decoration: none;
     color: #fff; }
 
-.intro .btn {
-  font-size: 25px;
-  font-weight: bold;
-  color: #fff;
-  *background-color: #df4759;
-  text-transform: uppercase;
-  *border-radius: 25px;
-  padding: 10px;
-  margin-top: 20px; }
-  .intro .btn:hover {
-    color: #c20000;
-    background-color: #333;
-    padding: 10px; }
-
 /* ---------------- */
 .area__cards {
   grid-area: area__cards; }
@@ -388,13 +443,13 @@ form fieldset {
 
 .carrusel {
   width: 95%;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   position: relative;
   padding: 25px;
   margin: 25px 0 25px 20px;
   box-sizing: border-box;
-  align-items: flex-end;
+  align-items: flex-start;
   text-decoration: none;
   border: 1px solid #c20000;
   background-image: url("../img/lavar.jpg");
@@ -409,7 +464,7 @@ form fieldset {
   background-image: url("../img/tubeless.png"); }
 
 .inner {
-  height: 60%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -432,12 +487,8 @@ form fieldset {
   color: #fff;
   text-align: center; }
 
-.inner__service {
-  font-size: 25px;
-  color: #fff;
-  text-align: center;
-  font-weight: 700;
-  text-decoration: none; }
+.inner__button {
+  text-align: center; }
 
 /* Pseudoclase :hover*/
 .inner__service:hover {
@@ -450,7 +501,7 @@ form fieldset {
 
 /* About */
 .about {
-  margin-top: 150px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -548,7 +599,7 @@ form fieldset {
 /* service */
 /* Tabla */
 .service {
-  margin-top: 150px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -565,34 +616,6 @@ form fieldset {
     font-weight: bold;
     padding: 10px;
     margin-top: 100px; }
-
-.table-responsive {
-  display: block;
-  width: 90%;
-  margin: 25px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar; }
-
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  display: table;
-  border-collapse: separate;
-  border-spacing: 2px;
-  border-color: grey; }
-  .table td {
-    font-size: medium;
-    padding: 15px;
-    text-align: justify;
-    background-color: rgba(51, 51, 51, 0.65); }
-
-.price {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px; }
 
 /* Area Bulid */
 .area__build {
@@ -639,7 +662,7 @@ form fieldset {
 
 /* Location */
 .location {
-  margin-top: 150px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -835,6 +858,8 @@ form fieldset {
 @media screen and (max-width: 768px) {
   .title {
     font-size: 40px; }
+  .subtitle {
+    font-size: 14px; }
   .intro {
     margin-top: 150px; }
     .intro p {
@@ -873,10 +898,6 @@ form fieldset {
   .location h4 {
     margin-top: 50px;
     font-size: 16px; }
-  th {
-    font-size: 12px; }
-  .precio {
-    font-size: 18px; }
   .build h4 {
     font-size: 20px; }
   .area__footer .footer__item {
@@ -925,10 +946,6 @@ form fieldset {
   .location h4 {
     margin-top: 30px;
     font-size: 16px; }
-  th {
-    font-size: 14px; }
-  .precio {
-    font-size: 14px; }
   .build h4 {
     font-size: 16px; }
   footer {
@@ -973,10 +990,6 @@ form fieldset {
     font-size: 16px; }
   .location p {
     font-size: 16px; }
-  th {
-    font-size: 16px; }
-  .precio {
-    font-size: 14px; }
   .build h4 {
     font-size: 14px; }
   footer {
@@ -1037,10 +1050,6 @@ form fieldset {
     height: 5px; }
   .location h4 {
     font-size: 10px; }
-  .table {
-    font-size: 10px; }
-  .precio {
-    font-size: 12px; }
   .build h4 {
     font-size: 14px; }
   footer {
@@ -1094,10 +1103,6 @@ form fieldset {
   .table-responsive {
     width: 80%;
     height: 80%; }
-  .table {
-    font-size: 10px; }
-  .precio {
-    font-size: 14px; }
   .build h4 {
     font-size: 14px; }
   footer {

@@ -211,13 +211,23 @@ form fieldset {
   width: 10px;
   height: 10px;
 }
+/* Card de Servicos con precios - page service.html */
 .card {
   background-color: $senary-color;
   border: 1px solid $quinary-color;
   border-radius: 8px;
   padding: 20px 9px 0px 9px;
-  text-align: center;
-  align-items: center;
+  text-align: left;
+  align-items: left;
+  .card__title {
+    font-size: 20px;
+    color: $primary-color;
+    margin-bottom: 5px;
+  }
+  li {
+    font-size: 16px;
+    color: $primary-color;
+  }
   &:hover {
     box-shadow: 0px 0px 25px $tertiary-color;
     transition: all 1s;
@@ -228,4 +238,22 @@ form fieldset {
 .title {
   @extend .titleStyles; // Font-size, color, background-color
   letter-spacing: 5px;
+}
+.subtitle {
+  @extend .subtitleStyles; // Font-size, color, background-color
+  letter-spacing: 3px;
+}
+.button {
+  @extend .buttonStyles; // Font-size, color, background-color
+  letter-spacing: 3px;
+}
+
+.button1 {
+  @extend .button1Styles; // Font-size, color, background-color
+  letter-spacing: 3px;
+}
+
+.button2 {
+  @extend .button2Styles; // Font-size, color, background-color
+  letter-spacing: 2px;
 }
