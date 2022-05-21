@@ -31,13 +31,14 @@ header nav {
       border-radius: 50%;
     }
     &:hover {
-      *background-color: $tertiary-color;
       padding: 15px;
       border-radius: 50%;
       transform: scale(1.5);
       transform: translateX(15px);
       text-transform: uppercase;
       transition: 0.8s;
+      border-bottom: 5px solid $nineth-color;
+      border-left: 5px solid $nineth-color;
     }
   }
   .nav-link {
@@ -197,11 +198,11 @@ form fieldset {
     &:hover {
       color: $nineth-color;
     }
-  .consent_check {
-    margin: 10px;
-    width: 15px !important;
-    height: 15px !important;
-   }
+    .consent_check {
+      margin: 10px;
+      width: 15px !important;
+      height: 15px !important;
+    }
   }
   &:hover {
     box-shadow: 0px 0px 25px $tertiary-color;
@@ -247,6 +248,46 @@ form fieldset {
     background-color: $secondary-color;
   }
 }
+/* WhatsApp Widdeg - Start */
+#whatsAppWidget {
+  position: fixed;
+  display: inline;
+  text-align: center;
+  line-height: 50px;
+  right: 20px;
+  bottom: 3px;
+  float: left;
+  margin-bottom: 60px;
+  z-index: 20;
+  .whatsapp-widget {
+    float: right;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px $whatsapp-color;
+    text-align: center;
+    line-height: 50px;
+    color: $primary-color;
+    background-color: $secondary-color;
+    margin-right: 10px;
+    svg {
+      display: inline;
+      justify-content: center;
+      align-items: center;
+      fill: $whatsapp-color;
+      width: 41px;
+      height: 50px;
+      &:hover {
+        fill: $primary-color;
+        transition: all 300ms ease;
+        width: 45px;
+        height: 54px;
+      }
+    }
+  }
+}
+/* WhatsApp Widdeg - End */
 .title {
   @extend .titleStyles; // Font-size, color, background-color
   letter-spacing: 5px;
