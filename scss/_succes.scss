@@ -1,5 +1,5 @@
 .succes {
-  margin-top: 100px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,13 +12,4 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  h1 {
-    display: flex;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 25px;
-    background-color: $tertiary-color;
-  }
 }

@@ -22,9 +22,9 @@
 </head>
 
 <body>
+    <!-- Grid Start -->
     <div class="container-fluid container__index">
         <!-- container-fluid (Estoy usando las clase para la grid de Bootstrap junto con la clase de mi css) -->
-        <!-- Grid -->
         <section class="row area__encabezado">
             <!-- row (Estoy usando una sola column en todo el proyecto) -->
             <header>
@@ -65,7 +65,7 @@
                 <!-- Navbar End -->
             </header>
         </section>
-
+        <!-- Intro start -->
         <section class="row area__intro">
             <div class="intro">
                 <h1 class="rotate-scale-up title">🛠️ TALLER DE BICICLETAS</h1>
@@ -83,9 +83,9 @@
                 <!-- Boton de navegacion -->
             </div>
         </section>
-
+        <!-- Intro End -->
         <section class="row area__cards">
-            <!-- area__cards (Estoy usando la clase de Bootstrap para crear una tarjeta en Carrusel) -->
+            <!-- area__cards (Carrusel) -->
             <dir class="titulos">
                 <span class="title">
                     <h2>Consejos útiles</h2>
@@ -94,9 +94,7 @@
                     <h5>Cuidado y mantenimiento de la bici</h5>
                 </span>
             </dir>
-
-            <!-- Carrusel Bootstrap -->
-
+            <!-- Carrusel Bootstrap pero con estilos propios desde mi css -->
             <div id="carousel__captions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel__captions" data-bs-slide-to="0" class="active"
@@ -186,6 +184,7 @@
             </div>
             <!--WhatsApp Start -->
             <div>
+                <!-- Los estilos para el Widget de WhatsApp esten en "_components.scss"-->
                 <div id="whatsAppWidget">
                     <a href="https://wa.link/4o4yim" target="_blank">
                         <div class="whatsapp-widget">
@@ -234,11 +233,11 @@
                 <small>Todos los derechos reservados &copy; 2022 - Developed by <b>César L. Medina</b></small>
             </div>
         </footer>
-        <!--Final Grid -->
+        <!-- Grid End -->
     </div>
+    <!--Final Container -->
     <!-- Scripts -->
     <script src="./assets/scripts/bootstrap.bundle.js"></script>
-    <!-- script src="/assets/scripts/scripts.js"></script -->
 </body>
 
 </html>
