@@ -1,14 +1,17 @@
 <?php
 
 $destino = "ojo.clinico.bike@gmail.com";
+$asunto = "Mensaje desde el sitio web de Ojo Clinico Bike";
 
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $email = $_POST['email'];
-$mensaje_body = $_POST['textbody'];
-$asunto = "Mensaje desde el sitio web de Ojo Clinico Bike";
+//$mensaje = $_POST['mensaje'];
 
 $header = "Mensaje desde el sitio web de Ojo Clinico Bike contacto en localhost";
-$mensaje = "\n Nombre: " . $nombre . "\n Apellido: " . $apellido . "\n" . "Email: " . $email . "\n" . "Mensaje :" . $mensaje_body;
-mail($destino, $asunto, $mensaje, $header);
-header('Location: index.html');
+
+$cuerpomensaje = "\n Nombre: " . $nombre . "\n Apellido: " . $apellido . "\n" . "Email: " . $email /*. "\n" . "Mensaje: " . $mensaje*/;
+mail($destino, $asunto, $cuerpomensaje, $header);
+header('Location: success.php');
+
+?>

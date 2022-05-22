@@ -72,7 +72,8 @@
             <!-- Estoy usando la Pseudoclase :hover para el form -->
             <div class="container__form">
                 <div class="form">
-                    <form class="form__body" action="../assets/php/form.php" method="post">
+                    <!-- Estoy usando la Pseudoclase :hover para el form -->
+                    <form method="post" action="../assets/php/form.php" class="form__body">
                         <fieldset>
                             <legend>
                                 <h2 class="subtitle">Solicitud de servicio</h2>
@@ -83,7 +84,7 @@
                                     <option value="yes">Soy socio/a</option>
                                     <option value="no">No soy socio/a</option>
                                 </select>
-                                <textarea id="txt" form="contacto" name="textbody" rows="3" cols="30"
+                                <textarea id="txt" form="contacto" name="mensaje" rows="3" cols="30"
                                     placeholder="Mensaje"></textarea>
                                 <input id="send" type="submit" value="Enviar">
                                 <div class="consent">

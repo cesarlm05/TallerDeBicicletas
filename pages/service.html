@@ -24,6 +24,7 @@
         <!-- Grid -->
         <section class="area__encabezado">
             <!-- row (Estoy usando una sola column en todo el proyecto) -->
+            <!-- Header start -->
             <header>
                 <nav class="navbar fixed-top navbar-light bg-danger">
                     <!-- navbar (Estoy usando la clase de Bootstrap para crear una barra de navegación) -->
@@ -59,6 +60,7 @@
                     </div>
                 </nav>
             </header>
+            <!-- Header end -->
         </section>
         <!-- Seccion de servicios -->
         <div class="row area__service">
@@ -187,10 +189,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- Form - Start -->
                 <!-- Formulario para petición de servicio -->
                 <div class="form">
                     <!-- Estoy usando la Pseudoclase :hover para el form -->
-                    <form class="form__body" action="../assets/php/form.php" method="post">
+                    <form method="post" action="../assets/php/form.php" class="form__body">
                         <fieldset>
                             <!-- Se me complicó el diseño del fielset -->
                             <legend>
@@ -203,7 +206,7 @@
                                     <option value="pro">Service Pro</option>
                                     <option value="entreprise">Service Enterprise</option>
                                 </select>
-                                <textarea id="txt" form="contacto" name="textbody" rows="3" cols="30"
+                                <textarea name="mensaje" id="txt" form="contacto" rows="3" cols="30"
                                     placeholder="Mensaje"></textarea>
                                 <input id="send" type="submit" value="Enviar">
                                 <div class="consent">
@@ -216,6 +219,7 @@
                         </fieldset>
                     </form>
                 </div>
+                <!-- Form - End -->
             </section>
         </div>
         <!-- Fin de seccion de servicios -->

@@ -754,6 +754,28 @@ form fieldset {
   margin: 15px;
   padding: 10px; }
 
+.succes {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(to right, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url("../img/un-taller.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .succes h1 {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(51, 51, 51, 0.65); }
+
 /* --- Medias & Animaciones --- */
 /* Animaciones animista.net */
 .rotate-scale-up {
