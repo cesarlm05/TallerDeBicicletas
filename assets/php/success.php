@@ -105,6 +105,7 @@
     <!-- Footer End -->
     <!-- Scripts -->
     <script src="../scripts/bootstrap.bundle.js"></script>
+    <script src="../scripts/scripts.js"></script>
 </body>
 
 </html>

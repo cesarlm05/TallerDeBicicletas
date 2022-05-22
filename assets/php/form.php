@@ -10,7 +10,7 @@ $email = $_POST['email'];
 
 $header = "Mensaje desde el sitio web de Ojo Clinico Bike contacto en localhost";
 
-$cuerpomensaje = "\n Nombre: " . $nombre . "\n Apellido: " . $apellido . "\n" . "Email: " . $email /*. "\n" . "Mensaje: " . $mensaje*/;
+$cuerpomensaje = "\n Nombre: " . $nombre . "\n Apellido: " . $apellido . "\n" . "Email: " . $email . "\n" . "Mensaje enviando el: " . date("d/m/Y", time());
 mail($destino, $asunto, $cuerpomensaje, $header);
 header('Location: success.php');
 
